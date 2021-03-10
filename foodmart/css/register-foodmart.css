@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Heading section */
+.heading_myaccount {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-family: "Cooper Black";
+}
+
+.my_account {
+    color: white;
+    text-align: center;
+}
+
+.my_account p {
+    font-size: 3rem;
+}
+
+.my_account a {
+    color: white;
+    opacity: 0.8;
+}
+
+.my_account a:hover {
+    opacity: 1;
+}
+
+/*  */
+.new_user {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register {
+    width: 100%;
+    margin-left: 20%;
+    text-align: right;
+    border-right: 1px solid #dbdbdb;
+    padding: 0px 50px;
+}
+
+.register_in {
+    width: 450px;
+    text-align: left;
+    margin-right: 0px;
+}
+
+.register_in input {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #dbdbdb;
+    margin: 15px 0px;
+    padding: 12px 0px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.register_in input:focus,.register_in button:focus{
+    outline: none;
+}
+
+.register_in button {
+    text-align: center;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin: 15px 0px;
+    padding: 15px 0px;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #83AC2B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.register_in button:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #4DBD33;
+}
+.register_in button {
+    opacity: 1;
+}
+.register-error{
+    color: red;
+}
+
+.myaccount_login {
+    margin-left: 80px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.myaccount_login p {
+    color: #777;
+}
+
+.myaccount_login button {
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.myaccount_login button:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 992px){
+
+    .register {
+        margin-left: 5%;
+        width: 70%;
+    }
+
+    .myaccount_login {
+        margin: 10px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .new_user {
+        flex-direction: column;
+    }
+
+    .register {
+        width: 80%;
+        margin: 0px;
+        border: none;
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 20px;
+    }
+    .register_in{
+        width: 100%;
+    }
+    .myaccount_login {
+        margin: 10px 20px;
+    }
+}
+
+/* Brands */
+.brands {
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+}
+
+.brands img {
+    width: 7rem;
+    margin: 0px auto;
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.brands img:hover {
+    filter: none;
+    opacity: 1;
+    -webkit-filter: none;
+}
+@media screen and (max-width: 992px){
+    .brands img{min-width: 5rem !important;}
+    .magisso,.louis,.klober{display: none;}
+}
+@media screen and (max-width: 600px){
+    .brands img{min-width: 6rem !important;}
+    .packit,.niche,.magisso,.louis,.klober{display: none;}
+}
+
+/*Footer------------------------------------------------------------------------------------------------------------>*/
+    /*Last_container */
+    .last_container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2.4fr;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+    .address_info{
+        width: 90%;
+    }
+    .address{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+    .address strong{
+        font-size: 42px;
+    }
+    .recent_post{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 40px;
+    }
+    .recent_post li{
+        font-size: 14px;
+        display: flex;
+    }
+    .recent_post a{
+        margin-bottom: 10px;
+        color: #6E3333;
+        text-decoration: none;
+    }
+    .recent_post span{
+        color: #BBBBBB;
+        margin-right: 20px;
+        margin-left: 12px;
+        float: right;
+    }
+    .table{
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 0.8fr;
+        margin-top: 20px;
+    }
+    .stories a ,.useful a,.footer_menu a{
+        color: black;
+        opacity: 0.6;
+        font-family: Corbel;
+        text-decoration: none;
+    }
+    .stories a:hover, .useful a:hover,.footer_menu a:hover{
+        opacity: 1;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+    }
+    ul li{
+        padding: 5px 0px;
+    }
+    .small_last{
+        display: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .small_last div{
+        padding: 20px;
+    }
+    .small_last i{
+        float: right;
+    }
+    @media screen and (max-width: 600px){
+        .recent_post{display: none;}
+        .table{display: none;}
+        .small_last{display: block;}
+    }
+
+    /*footer*/
+    footer{
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        border-top: 1px solid #777777;
+    }
+    .fot{
+        color: #777777;
+        font-size: 14px;
+        font-family: "Lato",Arial, Helvetica, sans-serif;
+        /* border: 1px solid red; */
+    }
+    .footertext-copyrights
+    {
+        padding-left:  20px;
+        float: left;
+    }
+    .bankingcards-image
+    {
+        float: right;
+        padding-right: 20px;
+    }
+    
+    /*Footer end-------------------------------------------------------------------------------------------------------->*/
+@media screen and (max-width: 600px) {
+    .brands img {
+        width: 2rem;
+    }
+    .footertext-copyrights{
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .bankingcards-image{float: none; margin-left: 100px;}
+}
