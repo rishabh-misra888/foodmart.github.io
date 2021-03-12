@@ -3,6 +3,7 @@ var temp;
 var login_status_email = 0;
 var login_status_password = 0;
 
+var apiData;
 async function getusers(){
 
 
@@ -29,13 +30,6 @@ var myInit = {
     }
 
 }
-
-   
-
-
-
-
-
  export function validateLoginEmail() {
 
     var email = document.getElementById("login-page-username").value;     
@@ -44,6 +38,7 @@ var myInit = {
      response.then(data => {
              var c = 0;
             var result;
+            apiData = data;
             for (var i = 0; i < data.length; i++) {
                 if (email == data[i].email) {
                     temp = i;
@@ -102,5 +97,6 @@ export function validateLoginPassword() {
 
 
 export function validateLoginPage() {
-    alert("Successfully Logged In");
+    // alert("Successfully Logged In" + apiData[temp].name);
+    return apiData[temp].name;
 }

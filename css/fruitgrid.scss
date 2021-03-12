@@ -1,0 +1,38 @@
+ /* grid1 fruits images*************************************************/
+  .fruits-grid-div {
+    margin-top: 50px;
+}
+
+.fruit-grid {
+    margin-top: 10px;
+    float: $float_left;
+    width: 85%;
+    height: 280px;
+    margin-left: 30px;
+    background-color: $products-grid-bgcolor;
+    text-align: $text_align_center;
+    overflow: hidden;
+}
+
+.fruit-grid:hover {
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 4px $products-boxshadow-color;
+    height: 410px;
+    z-index: 2;
+}
+
+.fruit-img {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.fruit-img:hover {
+    /*background-color: none;*/
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+/*****************************************************************/

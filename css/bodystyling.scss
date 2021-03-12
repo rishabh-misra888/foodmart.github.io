@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+/*Font*/
+@font-face {
+  font-family: myFirstFont;
+  src: url(./font/Sansation_Light_Italic.ttf);
+}
+
+/*BODY**********************************/
+body {
+  font-family: Arial;
+  /*overflow: scroll;*/
+}
+
+/*BODY end********************************/
+
+  /*grid items css*/
+  .price-color{
+    color: #028a0f;
+  }
+
+  .item-description{
+    color: grey;
+    font-family: myFirstFont;
+  }
+
+  .red-asteriks{
+    color: red;
+  }

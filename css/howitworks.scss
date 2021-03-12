@@ -1,0 +1,98 @@
+/*how it works************************************/
+  .title-howitworks{
+  font-weight: $b;
+  }
+  .container12 {
+      display:$grid_display;
+      margin-top: 700px;
+      text-align: $text_align_center;
+  }
+
+  #fphead3 {
+      /*margin-top: 1500px;*/
+      font-size: 40px;
+      font-family: $product-heading-font;
+  }
+
+  #fplogo3 {
+      margin-top: -20px;
+      width: 288px;
+      height: 70px;
+  }
+
+  #fptext3 {
+      color: rgba(0, 0, 0, 0.5);
+  }
+
+  /***********************************************/
+
+  /*grid 5 how it works*************************************************/
+  .container13 {
+      margin-top: 50px;
+  }
+
+  #grid5div1,
+  #grid5div2,
+  #grid5div3 {
+      float: $float_left;
+      height: 420px;
+      /*margin-left: 30px;*/
+      background-color: #fafafa;
+      text-align: $text_align_center;
+      overflow: hidden;
+  }
+
+  #grid5div1,
+  #grid5div3 {
+      width: 36%;
+  }
+
+  #grid5div2 {
+      width: 25%;
+  }
+
+  .howitworks-tableleft tr{
+    text-align: right;
+  }
+  .howitworks-tableleft{
+    text-align: right;
+    float: $float_right;
+  }
+  .how-it-works-table-right{
+    text-align: left;
+    float: $float_left;
+  }
+  .how-it-works-row-Alignment{
+    margin-top: -20px;
+    border-collapse:separate; 
+        border-spacing:0 50px;
+  }
+  .how-it-works-table-right tr{
+    text-align: left;
+  }
+  .howitworks-empty{
+    height: 50px;
+  }
+
+  .how-it-works-pic {
+      width: 80px;
+      height: 80px;
+  }
+
+  #hiwmainpic {
+      width: 300px;
+      height: 400px;
+  }
+
+  .how-it-works-text {
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.5);
+  }
+  .hiwrightr2{
+    text-align: left;
+  }
+
+  .second_row{
+
+  }
+  /*********************************************************************/

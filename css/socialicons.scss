@@ -1,0 +1,45 @@
+/* social icons*/
+.social-media-icons {
+  display: $grid_display;
+  grid-template-columns: 40px 70px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+  position: $social-icon-position;
+  top: 200px;
+  right: -70px;
+  z-index: 10;
+}
+
+.social-icons-top{
+  position: $social-icon-position;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.social-icons-bottom{
+  position: $social-icon-position;
+  width: 70px;
+  height: 40px;
+  z-index: 9;
+}
+#fbdiv1:hover ~ #fbdiv2 {
+  transform: translateX(-110px);
+  transition: 0.3s;
+}
+
+#twitterdiv1:hover ~ #twitterdiv2 {
+  transform: translateX(-110px);
+  transition: 0.3s;
+}
+
+#instadiv1:hover ~ #instadiv2 {
+  transform: translateX(-110px);
+  transition: 0.3s;
+}
+
+#youtubediv1:hover ~ #youtubediv2 {
+  transform: translateX(-110px);
+  transition: 0.3s;
+}
+
+/***************************************************************/

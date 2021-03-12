@@ -1,0 +1,63 @@
+/*Our burgers********************************************/
+.our-burgers-head-div {
+    display:$grid_display;
+    margin-top: 460px;
+    text-align: $text_align_center;
+}
+
+.our-burgers-heading {
+    font-size: 50px;
+    font-family: $product-heading-font;
+}
+
+.sub-banana-logo {
+    margin-top: -20px;
+    width: 288px;
+    height: 70px;
+}
+
+.our-burgers-quote1 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/***************************************************************/
+/*grid 2 burgers*************************************************/
+.our-burgers-grid-div {
+    margin-top: 50px;
+}
+
+.burger-grid {
+    margin-top: 10px;
+    float: $float_left;
+    width: 85%;
+    height: 280px;
+    margin-left: 30px;
+    background-color: $products-grid-bgcolor;
+    text-align: $text_align_center;
+    overflow: hidden;
+}
+
+.burger-grid:hover {
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 4px $products-boxshadow-color;
+    height: 410px;
+    z-index: 2;
+}
+
+.burger-grid:hover>.burger-img{
+    background-color: $products-grid-bgcolor;
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px 10px 10px;
+}
+
+.burger-img {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+
+  /*********************************************************************/

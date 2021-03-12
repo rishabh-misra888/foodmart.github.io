@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta name = "Snacks" content = "About  snacks">
+    <meta name = "keywords" content = "Burger, Shake, Wrap">
+    <meta name = "description" content = "Get your favourite meal here at best price">
+    <meta name = "author" content = "Rishabh , inderbir , Devinder , rajat , rajkumar">
+    <title>Home Page | FOODMART</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/foodmartMediaQ.css"> -->
+    <script src = "https://kit.fontawesome.com/bbe26e2434.js" crossorigin = "anonymous"></script>
+</head>
+
+<body>  <!--BEM for class names--> <!--hyphenated-->
+    <!--bg color change for js-->
+    <header>
+        <div class = "display-flex fixed-position bgbox-class" id = "bgbox"></div> 
+
+        <!--Navigation Bar Left Side-->
+        <nav class = "nav-left display-flex fixed-position" id = "navleftid">
+            <a class = "nav-hover none-decoration" id = "home" href = "#" tabindex = "100">
+                <div>
+                    <div>HOME<span class = "down-arrow">&or;</span>  
+                    </div>
+                </div>
+            </a>
+            <a class = "nav-hover none-decoration" id = "shop" href = "#" tabindex = "200"> 
+                <div class = "nav-border">
+                    <div>SHOP<span class = "down-arrow">&or;</span>
+                    </div>
+                </div>
+            </a>
+            <a class = "nav-hover none-decoration" id = "blog" href = "#" tabindex = "300">
+                <div class = "nav-border">
+                    <div>BLOG<span class = "down-arrow">&or;</span>
+                    </div>
+                </div>
+            </a>
+            <a class = "nav-hover none-decoration" id = "pages" href = "#" tabindex = "400">
+                <div class = "nav-border">PAGES<span class = "down-arrow">&or;</span>
+                </div>
+            </a>
+            <a class = "nav-hover none-decoration" id = "elements" href = "#" tabindex = "500">
+                <div class = "nav-border">ELEMENTS<span class = "down-arrow">&or;</span>
+                </div>
+            </a>
+            <a class = "nav-hover none-decoration" id = "buy" href = "#" tabindex = "600">
+                <div class = "nav-border">BUY<span class = "down-arrow">&or;</span>
+                </div>
+            </a>
+        </nav>
+        <!--home-->
+        <!--shop-->
+        <div class = "fixed-position disp-none" id = "shopjs">
+            <div id = "shopjsdiv" class = "display-flex space-around height90">
+                <div class = "center-flex-column height90" id = "shopitems">Shop Items
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Premium Fruits</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Cheesy Burgers</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Ice Cream</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Milkshakes</a></div>
+                </div>
+                <div class = "center-flex-column height90" id = "productreviews">Product Review
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Customer Reviews</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Positive Reviews</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Negative Reviews</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Recent Reviews</a></div>
+                </div>
+                <div class = "center-flex-column height90" id = "singleposts1">Single Posts
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Post Example #1</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Post Example #2</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Post Example #3</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "201">Post Example #4</a></div>
+                </div>
+            </div>
+        </div>
+        <!--blog-->
+        <div class = "fixed-position disp-none" id = "blogjs">
+            <div class = "display-flex space-around height90" id = "blogjsdiv">
+                <div class = "center-flex-column height90" id = "blogtypes">Blog Types
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Alternative</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Small Images</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Blog Chess</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Blog Mask</a></div>
+                </div>
+                <div class = "center-flex-column height90" id = "singleposts">Single Posts
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Post Example #1</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Post Example #2</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Post Example #3</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Post Example #4</a></div>
+                </div>
+                <div class = "center-flex-column height90" id = "productreviews1">Product Review
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Customer Reviews</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Positive Reviews</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Negative Reviews</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Post Example #4</a></div>
+                    <div class = "nav-menu"><a class = "nav-menu-text none-decoration" href = "#" tabindex = "301">Recent Reviews</a></div>
+                </div>
+            </div>
+        </div>
+        <!--__________________________________________________________________________________________________________-->
+        <!--Foodmart LOGO and title-->
+        <div class = "display-flex fixed-position" id = "title">
+            <div><img class = " logo" id = "foodmart-logo" src = "IMAGES/newlogo.png" alt = "FoodMart Logo"></div>
+            <div>
+                <!--<font class = " logo" id = "foodmart" face = "myFirstFont" size = "6"><b>FoodMart</b></font>-->
+                <!--<span class = " logo" id = "foodmart">FoodMart</span>-->
+                <span class = " logo" id = "foodmart">FoodMart</span><br><span id="setLocation" class="font-size"></span>
+            </div>
+        </div>
+        <!--__________________________________________________________________________________________________________-->
+        <!--Navigation Bar Right Side-->  
+        <nav class = "nav-right display-flex fixed-position" id = "navrightid">
+            <div class = "center-flex-column" id = "logreg">
+                <div id = "loginregister">
+                    <a id = "login" class = "none-decoration" tabindex = "700">LOGIN </a>
+                    <a id = "register" class = "nav-border none-decoration" tabindex = "800">/ REGISTER</a> <!--tabindex-->
+                </div>
+            </div>
+            <div id = "searchdiv" ><img class = "fixed-position" id = "searchlogo" src = "IMAGES/newsearch.png" alt = "search bar" tabindex = "900">
+                <div class = "fixed-position display-flex disp-none" id = "searchbar">
+                    <input type = "text" name = "searchbox" id = "searchbox" placeholder = "Search . . .">
+                    <div class = "display-flex center-text" id = "search-bar-close">Go</div>
+                </div>
+            </div>
+            <a class = "nav-hover  none-decoration" id = "help" href = "#" tabindex = "1000">
+                <span class = "help-display">HELP</span>
+            </a>
+        </nav>
+        <!--__________________________________________________________________________________________________________-->
+        <!--navigation bar background-->
+        <div class = "display-flex fixed-position" id = "titlecolor"></div>  
+        <div class = "display-flex fixed-position" id = "titlecolor1"></div>
+    </header>
+    <!--__________________________________________________________________________________________________________-->
+    <!--home screen background-->
+    <div class = "display-flex absolute-position" id = "homebg"></div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--home screen images and text-->
+    <!--<div class = "home-images display-flex absolute-position">-->
+    <div class = "home-images">
+        <div id = "homeimgcol1">
+            <!--<img class = "display-flex absolute-position translate-x-5" id = "wrap" src = "IMAGES/food_wrap_no_background.png" alt = "Food Wrap">-->
+            <img class = "translate-x-5" id = "wrap" src = "IMAGES/food_wrap_no_background.png" alt = "Food Wrap">
+        </div>
+        <div id = "homeimgcol2">
+            <h1 class = "veggie">Veggie</h1>
+            <h1 class = "veggie">Overloaded</h1>
+            <h1 class = "veggie">Cheese Wrap</h1>
+        </div>
+    </div>
+    <div class = "extra-image">
+        <div><img class = "absolute-position scale12" id = "corn" src = "IMAGES/corn.png" alt = "Corn"></div>
+        <div><img class = "absolute-position scale12" id = "broccoli" src = "IMAGES/broccoli.png" alt = "Broccoli"></div>
+        <div><img class = "absolute-position translatex-40" id = "tomato" src = "IMAGES/tomato.png" alt = "Tomato"></div>
+        <div><img class = "absolute-position translatex40" id = "carrot" src = "IMAGES/carrot.png" alt = "Carrot"></div>
+        <div><img class = "absolute-position translatex-40" id = "cucumber" src = "IMAGES/cucumber.png" alt = "Cucumber"></div>
+        <div><img class = "absolute-position" id = "redchilli" src = "IMAGES/redchilli.png" alt = "RedChilli"></div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--buy FoodMart-->
+    <div class = "fixed-position display-flex" id = "container5">
+        <img id = "wmlogo" src = "IMAGES/wmlogo.PNG" alt = "WoodmartLogo">
+        <div><a class = "none-decoration" id = "buywm1" href = "#" tabindex = "1100">
+                Buy FoodMart
+            </a>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    
+    <!--social media icons-->
+    <div class = "social-media-icons">
+        <div id = "fbdiv1" class = "icon-top">
+            <a href = "https://www.facebook.com/" tabindex = "-1">
+                <img class = "social-icons-top" src = "IMAGES/fb.png" alt = "fb Logo">
+            </a>
+        </div>
+
+        <div id = "fbdiv2" class = "icon-bottom">
+            <a href = "https://www.facebook.com/" tabindex = "1201">
+                <img class = "social-icons-bottom" src = "IMAGES/fb1.png" alt = "Facebook-logo">
+            </a>
+        </div>
+
+        <div id = "twitterdiv1" class = "icon-top">
+            <a href = "https://twitter.com/?lang=en" tabindex = "-1">
+                <img class = "social-icons-top" src = "IMAGES/twitter.PNG" alt = "twitter-Logo">
+            </a>
+        </div>
+
+        <div id = "twitterdiv2" class = "icon-bottom">
+            <a href = "https://twitter.com/?lang=en" tabindex = "1202">
+                <img class = "social-icons-bottom" src = "IMAGES/twitter1.png" alt = "Twitter_Logo">
+            </a>
+        </div>
+
+        <div id = "instadiv1" class = "icon-top">
+            <a href = "https://www.instagram.com/?hl=en" tabindex = "-1">
+                <img class = "social-icons-top" src = "IMAGES/insta.PNG" alt = "insta-Logo">
+            </a>
+        </div>
+
+        <div id = "instadiv2" class = "icon-bottom">
+            <a href = "https://www.instagram.com/?hl=en" tabindex = "1203">
+                <img class = "social-icons-bottom" src = "IMAGES/insta1.png" alt = "instagram Logo">.
+            </a>
+        </div>
+
+        <div id = "youtubediv1" class = "icon-top">
+            <a href = "https://www.youtube.com/" tabindex = "-1">
+                <img class = "social-icons-top" src = "IMAGES/youtubeold.PNG" alt = "Yt-Logo">
+            </a>
+        </div>
+
+        <div id = "youtubediv2" class = "icon-bottom">
+            <a href = "https://www.youtube.com/" tabindex = "1204">
+                <img class = "social-icons-bottom" src = "IMAGES/youtube1.png" alt = "Youtube Logo">
+            </a>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    
+    <!--video-->
+    <div class="video-play display-flex">
+        <video autoplay muted loop>
+            <source src="./VIDEOS/burger_video.mp4" type="video/mp4">
+            <source src="./VIDEOS/burger_video.ogg" type="video/ogg">
+        </video>
+    </div>
+
+    <!--featured products-->
+    <section class = "featured-products-head-div">
+        <div>
+            <h2 class = "featured-products-heading">Featured Products</h2>
+        </div>
+        <div><img class = "sub-banana-logo" src = "IMAGES/fplogo.PNG" alt = "Banana Logo"></div>
+        <div>
+            <span class = "featured-products-quote1">There are many variations of passages of lorem ipsum available</span>
+        </div>
+    </section>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid1 fruits 4 images-->
+    <div class = "fruits-grid-div">
+        <div class = "double-column">
+            <div class = "single-column">
+                <div class = "fruit-grid fruit1"><img class = "fruit-img" src = "IMAGES/greenapple.png" alt = "Green-Apple"><br><br>
+                    <span class="fruit-name">Green Apple</span><br><br>
+                    <span class = "price-color">Rs. 80/kg</span><br><br>
+                    <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+                </div>
+            </div>
+            <div class = "single-column">
+                <div class = "fruit-grid fruit2"><img class = "fruit-img" src = "IMAGES/avacado.png" alt = "Avacado-img"><br><br>
+                    <span class="fruit-name">Avacado</span><br><br>
+                    <span class = "price-color">Rs. 80/kg</span><br><br>
+                    <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class = "single-column">
+                <div class = "fruit-grid fruit3"><img class = "fruit-img" src = "IMAGES/grapes.png" alt = "Grapes"><br><br>
+                    <span class="fruit-name">Grapes</span><br><br>
+                    <span class = "price-color">Rs. 80/kg</span><br><br>
+                    <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+                </div>
+            </div>
+            <div class = "single-column">
+                <div class = "fruit-grid fruit4"><img class = "fruit-img" src = "IMAGES/apricot.png" alt = "Apricot-img"><br><br>
+                    <span class="fruit-name">Apricot</span><br><br>
+                    <span class = "price-color">Rs. 80/kg</span><br><br>
+                    <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--Our burgers-->
+    <section class = "our-burgers-head-div" id = "burger">
+        <div>
+            <h2 class = "our-burgers-heading">Our Burgers</h2>
+        </div>
+        <div><img class = "sub-banana-logo" src = "IMAGES/fplogo.PNG" alt = "Banana logo"></div>
+        <div>
+            <span class = "our-burgers-quote1">There are many varieties of delicious burgers</span>
+        </div>
+    </section>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid 2 burgers-->
+    <div class = "our-burgers-grid-div">
+        <div class = "single-column">
+            <div class = "burger-grid burger1"><img class = "burger-img " src = "IMAGES/burger3.png" alt = "Cheese Loaded"><br><br>
+                <span class = "burger-name">Cheese Loaded</span><br><br>
+                <span class = "price-color">Rs. 180/-</span><br><br>
+                <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+            </div>
+        </div>
+        <div class = "single-column">
+            <div class = "burger-grid burger2"><img class = "burger-img " src = "IMAGES/burger1.png" alt = "Crispy Veggie"><br><br>
+                <span class="burger-name">Crispy Veggie</span><br><br>
+                <span class = "price-color">Rs. 80/-</span><br><br>
+                <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+            </div>
+        </div>
+        <div class = "single-column">
+            <div class = "burger-grid burger3"><img class = "burger-img " src = "IMAGES/burger2.png" alt = "Spicy Chicken"><br><br>
+                <span class="burger-name">Spicy Chicken</span><br><br>
+                <span class = "price-color">Rs. 80/-</span><br><br>
+                <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+            </div>
+        </div>
+        <div class = "single-column">
+            <div class = "burger-grid burger4"><img class = "burger-img " src = "IMAGES/burger4.png" alt = "Double Decker"><br><br>
+                <span class="burger-name">Double Decker</span><br><br>
+                <span class = "price-color">Rs. 180/-</span><br><br>
+                <span class = "item-description">Delivered Fresh directly at your door step. Order now to avail flat discount up to 50%</span>
+            </div>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid 3 milkshake-->
+    <div class = "container10">
+        <div id = "grid3div1"><img id = "milkshake" src = "IMAGES/milkshake.png" alt = "Milkshake"></div>
+        <div id = "grid3div2">
+            <div id = "grid3div3">
+                <a class = "g3d2link" id = "g3d2text3" href = "#">View More</a>
+                <a class = "g3d2link" id = "g3d2text4" href = "#">Go To Shop</a>
+            </div>
+            <span id = "g3d2text1">Premium Milkshakes</span><br><br>
+            <div id = "g3d2text2">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover.<br><br>
+                <strong>Most Loved</strong>
+                <ol>
+                    <li>Pineapple Punch</li>
+                    <li>Creamy Banana</li>
+                    <li>Mixed Fruit</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid 4 ice cream-->
+    <div class = "icecream-container">
+        <div class = "icecream-grid">
+            <span class = "fruit-ice-cream-heading">Fruit Ice Cream</span><br><br>
+            <div class = "fruit-ice-cream-para">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover.<br><br>
+                <strong>Most Loved</strong><br>
+                <ul>
+                    <li dir = "rtl">&#x2022; Vanilla</li>
+                    <li dir = "rtl">&#x2022; Tutti Frutti</li>
+                    <li dir = "rtl">&#x2022; Strawberry</li>
+                    <li dir = "rtl">&#x2022; Choco Chip</li>
+                </ul>
+            </div>
+            <table class = "icecream-table">
+                <tbody>
+                    <tr id = "icecreamrow1">
+                        <td id = "num20">20</td>
+                        <td id = "num460">460</td>
+                        <td id = "num135">135</td>
+                    </tr>
+                    <tr class = "icecream-numbers-text">
+                        <td>INGREDIENTS</td>
+                        <td>PACKAGE WEIGHT</td>
+                        <td>CALORIES ONLY</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = "grid4div1"><img id = "icecream1" src = "IMAGES/icecream1.png" alt = "IceCream"></div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--How it works-->
+    <section class = "container12">
+        <div>
+            <h2 id = "fphead3">How It Works</h2>
+        </div>
+        <div><img id = "fplogo3" src = "IMAGES/fplogo.PNG" alt = "Banana Logo"></div>
+        <div>
+            <span id = "fptext3">There are many variations of passages of lorem ipsum available</span>
+        </div>
+    </section>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid 5 how it works-->
+    <div class = "container13">
+        <div id = "grid5div1">
+            <table class = "howitworks-tableleft how-it-works-row-Alignment">
+                <tbody>
+                    <tr>
+                        <td class="title-howitworks">Overall Health <br><br>
+                            <span class = "how-it-works-text">All the lorem ipsum generators on the Internet tend to repeat predefined chunks as necessary.</span>
+                        </td>
+                        <td><img class = "how-it-works-pic" src = "IMAGES/hiwpic1.PNG" alt = "Natural Fruit"></td>
+                    </tr>
+                    <tr class = "second_row">
+                        <td class="title-howitworks">Pesticide reduction <br><br>
+                            <span class = "how-it-works-text">Consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical.</span>
+                        </td>
+                        <td ><img class = "how-it-works-pic" src = "IMAGES/hiwpic2.PNG" alt = "Oraganic Fruit"></td>
+                    </tr>
+                    <tr>
+                        <td class="title-howitworks">Antibiotic resistance <br><br>
+                            <span class = "how-it-works-text">Many desktop publishing packages and web page editors now use lorem ipsum as their.</span>
+                        </td>
+                        <td><img class = "how-it-works-pic" src = "IMAGES/hiwpic3.PNG" alt = "Antibiotic"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = "grid5div2"><img id = "hiwmainpic" src = "IMAGES/howitworks.png" alt = "camu camu"></div>
+        <div id = "grid5div3">
+            <table class = "how-it-works-table-right how-it-works-row-Alignment">
+                <tbody>
+                    <tr>
+                        <td><img class = "how-it-works-pic" src = "IMAGES/hiwpic4.PNG" alt = "Antioxidant"></td>
+                        <td class="title-howitworks">Antioxidant capacity <br><br>
+                            <span class = "how-it-works-text">Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</span>
+                        </td>
+                    </tr>
+                    <tr class = "hiwrightr2">
+                        <td><img class = "how-it-works-pic" src = "IMAGES/hiwpic5.PNG" alt = "Environmental"></td>
+                        <td class="title-howitworks">Environmental safety <br><br>
+                            <span class = "how-it-works-text">It was popularised in the 60s with the release of Letraset sheets containing lorem passages.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class = "how-it-works-pic" src = "IMAGES/hiwpic6.PNG" alt = "Immunity"></td>
+                        <td class="title-howitworks">Immune system boost <br><br>
+                            <span class = "how-it-works-text">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as.</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid 6 1234 blocks-->
+    <div class = "container14">
+        <div class = "con14div carefully-picked">
+            <div class = "grid6div">
+                <span class = "number">1.</span> <br><br>
+                <span class="title-grid">Carefully picked</span> <br><br>
+                <span class = "con14text">Contrary to popular belief, lorem ipsum is not simply random text. It has roots in literature.</span> <br><br> <a class = "readmore" href = "#">Read More</a>
+            </div>
+        </div>
+        <div class = "con14div freshly-squeezed">
+            <div class = "grid6div">
+                <span class = "number">2.</span> <br><br>
+                <span class="title-grid">Freshly squeezed</span> <br><br>
+                <span class = "con14text">Contrary to popular belief, lorem ipsum is not simply random text. It has roots in literature.</span> <br><br> <a class = "readmore" href = "#">Read More</a>
+            </div>
+        </div>
+        <div class = "con14div securely-packed">
+            <div class = "grid6div">
+                <span class = "number">3.</span> <br><br>
+                <span class="title-grid">Securely packed</span> <br><br>
+                <span class = "con14text">Contrary to popular belief, lorem ipsum is not simply random text. It has roots in literature.</span> <br><br> <a class = "readmore" href = "#">Read More</a>
+            </div>
+        </div>
+        <div class = "con14div vitamins">
+            <div class = "grid6div">
+                <span class = "number">4.</span> <br><br>
+                <span class="title-grid">Vitamins and minerals</span> <br><br>
+                <span class = "con14text">Contrary to popular belief, lorem ipsum is not simply random text. It has roots in literature.</span> <br><br> <a class = "readmore" href = "#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--grid 7 back to top button-->
+    <div class = "container15">
+        <div id = "grid7div1"><a id = "bttoplink" href = "#">Leave A Review</a>
+        </div>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--Footer-->
+    <div class = "last-container">
+        <div class = "address">
+            <strong>FoodMart</strong>
+            <p class = "footertext-copyrights">Condimentum adipiscing vel neque dis nam parturient orci scelerisque neque dis nam parturient.</p>
+            <ul>
+                <li><i class = "fa fa-location-arrow" aria-hidden = "true"></i>&nbsp;&nbsp;451 Wall Street,UK, London</li>
+                <li><i class = "fa fa-mobile" aria-hidden = "true"></i>&nbsp;&nbsp; Phone: (064) 332-1233</li>
+                <li><i class = "fa fa-envelope-o" aria-hidden = "true"></i>&nbsp;&nbsp; Fax: (099) 453-1357</li>
+            </ul>
+        </div>
+        <div class = "recent-post">
+            <h4>RECENT POSTS</h4>
+            <ul>
+                <li>
+                    <img src = "IMAGES/blog-11-75x65.jpg" alt = "Extra sleeping">
+                    <span>
+                        <a href = "#" class = "recent-post-text">A companion for extra sleeping<br>Feb 06, 2021</a><br>
+                        <!--<span class = "recent-post-text">Feb 06, 2021</span>-->
+                    </span>
+                </li>
+                <li>
+                    <img src = "IMAGES/blog-12-75x65.jpg" alt = "Outdoor seating">
+                    <span>
+                        <a href = "#" class = "recent-post-text">Outdoor seating collection<br>Feb 06, 2021</a><br>
+                        <!--<span .class = "recent-post-text">Feb 06, 2021</span>-->
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class = "table">
+            <div class = "stories">
+                <strong>OUR STORIES</strong>
+                <ul>
+                    <li><a href = "#">New York</a></li>
+                    <li><a href = "#">London SF</a>
+                    <li><a href = "#">Cockfosters BP</a></li>
+                    <li><a href = "#">Los Angeles</a></li>
+                    <li><a href = "#">Chicago</a></li>
+                    <li><a href = "#">Las Vegas</a></li>
+                </ul>
+            </div>
+            <div class = "useful">
+                <strong>USEFUL LINKS</strong>
+                <ul>
+                    <li><a href = "#">Privacy Policy</a></li>
+                    <li><a href = "#">Returns</a></li>
+                    <li><a href = "#">Terms & Conditions</a></li>
+                    <li><a href = "#">Contact Us</a></li>
+                    <li><a href = "#">Latest News</a></li>
+                    <li><a href = "#">Our Sitemap</a></li>
+                </ul>
+            </div>
+            <div class = "footer-menu">
+                <strong>FOOTER MENU</strong>
+                <ul>
+                    <li><a href = "#">Instagram Profile</a></li>
+                    <li><a href = "#">New Collection</a></li>
+                    <li><a href = "#">Woman Dress</a></li>
+                    <li><a href = "#">Contact Us</a></li>
+                    <li><a href = "#">Latest News</a></li>
+                    <li><a href = "#"><i>Purchase Theme</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class = "small-last">
+        <div>
+            <strong>RECENT POSTS</strong>
+            <i class = "fa fa-chevron-down" aria-hidden = "true"></i>
+        </div>
+        <div>
+            <strong>OUR STORES</strong>
+            <i class = "fa fa-chevron-down" aria-hidden = "true"></i>
+        </div>
+        <div>
+            <strong>USEFUL LINKS</strong>
+            <i class = "fa fa-chevron-down" aria-hidden = "true"></i>
+        </div>
+        <div>
+            <strong>FOOTER MENU</strong>
+            <i class = "fa fa-chevron-down" aria-hidden = "true"></i>
+        </div>
+    </div>
+    <footer>
+        <div class = "fot">
+            <small class = "footertext-copyrights">
+                <strong>FOODMART</strong> <i class = "fa fa-copyright" aria-hidden = "true"></i> 2021 CREATED BY <strong>XTEMOS STUDIO.</strong>PREMIUM E-COMMERCE SOLUTIONS.
+            </small>
+            <img class = " bank-cards-image " src = "IMAGES/payments.png" alt = "Cards">
+        </div>
+    </footer>
+    <!--__________________________________________________________________________________________________________-->
+    <!--Side Login-->
+    <div id = "login-page" class = "loginpage disp-none">
+        <!-- display name after login start -->
+        <div id="display-username" class="disp-none"></div>
+        <div id="sign-out" class="disp-none">Signout</div>
+        <!-- display name after login start -->
+        <form action = "foodmart2.html" method = "POST" id="login-form">
+            <h2>SIGN IN</h2>
+            <h5 id = "close_login" tabindex = "709">CLOSE &nbsp;<i class = "fa fa-times" aria-hidden = "true"></i></h5>
+            <p></p>
+            <label for = "login-page-username">Username or Email <span class = "red-asteriks">*</span></label><br>
+            <input type = "text" name = "name" class = "loginpageusername" id = "login-page-username" tabindex = "701"><br>
+            <span id = "email-status"></span><br>
+            <label for = "login-page-password">Password <span class = "red-asteriks">*</span></label><br>
+            <input type = "password" name = "pass" class = "loginpagepassword" id = "login-page-password" tabindex = "702"><br>
+            <span id = "password-status"></span><br>
+            <button type = "submit" id = "log" class = "log_button" disabled tabindex = "703">LOGIN</button><br>
+            <input type = "checkbox" class = "checkbox" tabindex = "704">
+            <span class = "remember_me">Remember me</span>
+            <a href = "#" class = "lost_your_password" tabindex = "705">Lost your password?</a>
+            <div class = "orloginwith">OR LOGIN WITH</div>
+            <button type = "button" class = "socio_login" id = "fb_account" tabindex = "706"><i class = "fa fa-facebook-square" aria-hidden = "true"></i>FACEBOOK</button><br>
+            <button type = "button" class = "socio_login" id = "google_account" tabindex = "707"><i class = "fa fa-google" aria-hidden = "true"></i>GOOGLE</button>
+            <p></p>
+            <div class = "no_account">
+                <i class = "fa fa-user-o fa-3x" aria-hidden = "true"></i><br>
+                No Account yet?<br><br>
+                <a href = "register-foodmart.html" tabindex = "708">CREATE NEW ACCOUNT</a><br>
+            </div>
+            <p></p>
+        </form>
+    </div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--transparent background when login page appears-->
+    <div id = "transbg" class = "disp-none"></div>
+    <!--__________________________________________________________________________________________________________-->
+    <!--Down_navbar-->
+    <div class = "down_nav">
+        <div class = "down" aria-disabled = "false"  role = "button" title = "Shop"  aria-label = "Menu">
+            <i class = "fa fa-shopping-bag" aria-hidden = "true"></i><br>
+        </div>
+        <div class = "down" aria-disabled = "false"  role = "button" title = "Favourite"  aria-label = "Menu">
+            <i class = "far fa-heart"></i><br>
+        </div>
+        <div class = "down ri" id = "down_menu_login" aria-disabled = "false"  role = "button" title = "My Account"  aria-label = "Menu">
+            <i class = "fa fa-user" aria-hidden = "true"></i><br>
+        </div>
+        <div class = "down" aria-disabled = "false"  role = "button" title = "Help"  aria-label = "Menu" id="searchbutton-bottom">
+            <i class="fa fa-search" aria-hidden="true"></i><br>
+        </div>
+    </div>
+    <!--Down_navbar ends-->
+
+    <!--down search bar-->
+    <div class = "fixed-position disp-none" id = "searchbar-bottom">
+        <input type = "text" name = "searchboxbottom" id = "searchbox-bottom" placeholder = "Search . . .">
+        <div class = "display-flex center-text" id = "search-bar-close-bottom">Go</div>
+    </div>
+
+    <!--<script src = "./jshome/controller/jquery.js"></script>-->
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js" integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin = "anonymous"></script>
+    <script type = "module" src = "./jshome/controller/foodmart2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+/*home page bg color*************************************/
+#homebg {
+  top: 75px;
+  left: 0px;
+  right: 0px;
+  height: 540px;
+  animation-name: bgcolor;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+/*home page bg color ends***************************/
+/*home image*****************************************/
+@keyframes bordercolorchange {
+  0% {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+.home-images {
+  margin-top: 190px;
+  display:$flex_display;
+  justify-content: center;
+  height: auto;
+}
+
+#homeimgcol1 {
+  width: 500px;
+  height: auto;
+  /*height: 320px;*/
+  border-style: none none solid none;
+  border-width: 20px;
+  animation-name: bordercolorchange;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  text-align: right;
+}
+
+#homeimgcol2 {
+  width: 360px;
+  height: auto;
+  /*height: 320px;*/
+  border-style: solid solid solid none;
+  border-width: 20px;
+  animation-name: bordercolorchange;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.veggie {
+  margin: 0%;
+  font-size: 60px;
+  color: white;
+  font-family: calibri;
+}
+
+#wrap {
+  margin-right: 30px;
+  /*left: 20%;*/
+  width: 380px;
+  height: auto;
+}
+
+.translate-x-5:hover {
+  transform: translateX(5%);
+  transition: 0.4s ease-in-out;
+}
+
+#corn {
+  top: 370px;
+  left: 80px;
+  width: 200px;
+  height: 130px;
+}
+
+.scale12:hover {
+  transform: scale(1.2);
+  transition: 0.4s ease-in-out;
+}
+
+#broccoli {
+  top: 60px;
+  left: 940px;
+  width: 200px;
+  height: 230px;
+  z-index: 9;
+}
+
+#tomato {
+  top: 150px;
+  left: 80px;
+  width: 150px;
+  height: 150px;
+}
+
+.translatex-40:hover {
+  transform: translateX(-40px);
+  transition: 0.4s ease-in-out;
+}
+
+#carrot {
+  top: 410px;
+  left: 950px;
+  width: 200px;
+  height: 130px;
+}
+
+.translatex40:hover {
+  transform: translateX(-40px);
+  transition: 0.4s ease-in-out;
+}
+
+#cucumber {
+  top: 410px;
+  left: 650px;
+  width: 250px;
+  height: 160px;
+}
+
+#redchilli {
+  width: 20%;
+  top: -4%;
+  left: 43%;
+  z-index: 9;
+}
+
+/*home image ends***************************************/
+/*Buy Foodmart********************************************/
+#container5 {
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  height: 50px;
+  bottom: 8%;
+  left: 5%;
+  border-radius: 25px;
+  color: white;
+  z-index: 12;
+}
+
+#container5 a {
+  font-family: myFirstFont;
+  color: white;
+  padding-right: 5px;
+}
+#container5 img {
+  border-radius: 25px;
+  /*height: 70%;*/
+  height: auto;
+  align-self: center;
+  width: 18%;
+  margin-top: 2px;
+}
+
+#container5:hover {
+  background-color: #1e5631;
+}
+
+/************************************************************/
+/*Shop now and view more****************************************/
+#container4 {
+  top: 82%;
+  right: 17%;
+  width: 25%;
+  font-family: calibri;
+  justify-content: space-between;
+  text-align: $text_align_center;
+  align-items: center;
+  z-index: 2;
+}
+
+#container4 a {
+  color: white;
+}
+
+#shopnow {
+  border: 3px solid white;
+  border-radius: 35px;
+  width: 45%;
+  opacity: 0.7;
+  box-sizing: border-box;
+}
+
+#container4 .opacity1hover:hover {
+  opacity: 1;
+}
+
+#viewmore {
+  background-color: #1e5631;
+  border-radius: 35px;
+  width: 45%;
+  opacity: 0.7;
+  height: 50px;
+  text-align: $text_align_center;
+}
+
+/***************************************************/

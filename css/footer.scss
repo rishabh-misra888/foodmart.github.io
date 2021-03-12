@@ -1,0 +1,141 @@
+/*Footer------------------------------------------------------------------------------------------------------------>*/
+    /*last-container */
+ .last-container {
+  display:$grid_display;
+  grid-template-columns: 2fr 2fr 2.4fr;
+  padding: 5px;
+  font-family: $footer-font-family;
+  width: 100%;
+}
+
+.address {
+  display:$grid_display;
+  grid-template-columns: 1fr;
+}
+
+.footertext-copyrights {
+  width: 90%;
+}
+
+.address strong {
+  font-size: 42px;
+}
+
+.recent-post {
+  display:$flex_display;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 40px;
+}
+.recent-post li {
+  font-size: 14px;
+  display:$flex_display;
+}
+.recent-post-text{
+  position: relative;
+  //top: 25px;
+  left: 10px;
+}
+.recent-post a {
+  margin-bottom: 10px;
+  color: #6E3333;
+  text-decoration: none;
+  font-size: 12px;
+}
+.recent-post span {
+  color: #BBBBBB;
+  margin-right: 20px;
+  //margin-left: 20px;
+  float: $float_right;
+}
+.recent-post p {
+  font-size: 15px;
+}
+
+.table {
+  display:$grid_display;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr;
+  margin-top: 20px;
+}
+
+.stories a, .useful a, .footer-menu a {
+  color: $footer-links-color;
+  opacity: 0.6;
+  font-family: Corbel;
+  text-decoration: none;
+}
+
+.stories a:hover, .useful a:hover, .footer-menu a:hover {
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+ul li {
+  padding: 5px 0px;
+}
+
+.small-last {
+  display: none;
+  font-family: $footer-font-family;
+}
+.small-last div {
+  padding: 20px;
+}
+.small-last i {
+  float: $float_right;
+}
+
+@media screen and (max-width: 600px) {
+  .recent-post {
+    display: none;
+  }
+
+  .table {
+    display: none;
+  }
+
+  .small-last {
+    display: block;
+  }
+}
+/*footer*/
+footer {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-top: 1px solid #777777;
+}
+
+.fot {
+  color: #777777;
+  font-size: 14px;
+  font-family: $footer-font-family;
+}
+
+.footertext-copyrights {
+  float: $float_left;
+}
+
+.bank-cards-image{
+  float: $float_right;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .recent-post {
+    display: none;
+  }
+
+  .table {
+    display: none;
+  }
+
+  .small-last {
+    display: block;
+  }
+  
+}
+/*Footer end-------------------------------------------------------------------------------------------------------->*/

@@ -1,0 +1,54 @@
+  /*grid 6 1234 blocks**************************************************/
+  .container14 {
+  position: relative;
+  top: 50px;
+  color: white;
+}
+.title-grid {
+  font-weight:bold;
+}
+.con14div {
+  padding: 20px;
+  float: $float_left;
+  width: 25%;
+  height: 250px;
+}
+
+.carefully-picked {
+  background-color: #7c5295;
+}
+
+.freshly-squeezed {
+  background-color: #ef7215;
+}
+
+.securely-packed {
+  background-color: #f25278;
+}
+
+.vitamins {
+  background-color: #8a9a5b;
+}
+
+.number {
+  font-size: 60px;
+  font-weight:bold;
+}
+
+.con14text {
+  font-family: myFirstFont;
+  font-size: 13px;
+}
+
+.grid6div {
+  margin-left: 10px;
+  width: 90%;
+}
+
+.readmore {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+  /*********************************************************************/

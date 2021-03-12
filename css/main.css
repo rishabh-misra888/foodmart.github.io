@@ -14,6 +14,20 @@ body {
 }
 
 /*BODY end********************************/
+/*grid items css*/
+.price-color {
+  color: #028a0f;
+}
+
+.item-description {
+  color: grey;
+  font-family: myFirstFont;
+}
+
+.red-asteriks {
+  color: red;
+}
+
 /*Navigation left*************************************/
 /*Navigation bar class*/
 @keyframes bgcolor {
@@ -528,61 +542,7 @@ body {
 }
 
 /***************************************************/
-/*social media icons inder********************************/
-/*.social-media-icons {
-  position: $social-icon-position;
-  top: 200px;
-  width: 30%;
-  height: 35%;
-  right: 0%;
-  z-index: 10;
-}
-
-.height100 {
-  height: 100%;
-}
-
-.socialicon {
-  display:$flex_display;
-  height: 25%;
-  overflow: hidden;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  z-index: 20;
-}
-
-.firsticon {
-  width: 12%;
-}
-
-.secondicon {
-  position: relative;
-  left: 90%;
-  width: 80%;
-  z-index: -30;
-}
-
-.firsticon:hover + .secondicon {
-  transform: translateX(-125px);
-  transition: 0.3s;
-}
-
-#fb {
-  background-color: #365493;
-}
-
-#twitter {
-  background-color: #33CCFF;
-}
-
-#insta {
-  background-color: #774430;
-}
-
-#yt {
-  background-color: #CB2027;
-}*/
-/*my social icons*/
+/* social icons*/
 .social-media-icons {
   display: grid;
   grid-template-columns: 40px 70px;
@@ -628,21 +588,6 @@ body {
 }
 
 /***************************************************************/
-/***************************************************************/
-@media screen and (max-width: 600px) {
-  .recent-post {
-    display: none;
-  }
-
-  .table {
-    display: none;
-  }
-
-  .small-last {
-    display: block;
-  }
-}
-/*Footer end-------------------------------------------------------------------------------------------------------->*/
 /*Side Login-------------------------------------------------------------------------------------------------------->*/
 .loginpage {
   /*display: none;*/
@@ -682,6 +627,10 @@ body {
 .lost_your_password {
   font-size: 12px;
   margin-top: 20px;
+}
+
+.lost_your_password {
+  float: right;
 }
 
 .orloginwith {
@@ -817,44 +766,38 @@ body {
 
 /*Side Login ends---------------------------------------------------------------------------------------------------->*/
 /*Transparent background--------------------------------------------------------------------------------------------->*/
-/*REPEATED TRANSBG*/
-/*#transbg {
-  display: none;
+#transbg {
+  /*display: none;*/
   position: fixed;
   top: 0px;
   bottom: 0px;
+  /*left: 0px;*/
   right: 320px;
   width: 100%;
   background-color: black;
   opacity: 0.65;
   z-index: 11;
-}*/
+}
+
 /*Transparent background ends------------------------------------------------------------------------------------------>*/
-/*grid items css*/
-.price-color {
-  color: #028a0f;
+/*username display*/
+#display-username {
+  margin-top: 50px;
+  font-size: 18px;
   font-weight: bold;
+  color: #f25278;
+  border-radius: 15px 50px;
+  background-color: rgba(239, 114, 21, 0.1);
+  border: 2px solid #ef7215;
 }
 
-.burger-name {
-  font-weight: bold;
+#sign-out {
+  font-size: 14px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.fruit-name {
-  font-weight: bold;
-}
-
-.item-description {
-  color: grey;
-  font-family: myFirstFont;
-}
-
-.red-asteriks {
-  color: red;
-}
-
-/*# sourceMappingURL=si.css.map */
-/***************************************************************/
 /*video*/
 .video-play {
   justify-content: center;
@@ -867,6 +810,23 @@ body {
   height: 20%;
   box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
+}
+
+.advertise-text {
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
 }
 
 /*featured products********************************************/
@@ -1304,43 +1264,6 @@ body {
 }
 
 /*********************************************************************/
-/*classes for javascript*/
-.disp-block {
-  display: block;
-}
-
-.disp-none {
-  display: none;
-}
-
-.overflow_scroll {
-  overflow: scroll;
-}
-
-.overflow_hidden {
-  overflow: hidden;
-}
-
-.z_index_-2 {
-  z-index: -2;
-}
-
-.z_index_6 {
-  z-index: 6;
-}
-
-.z_index_7 {
-  z-index: 7;
-}
-
-.z_index_8 {
-  z-index: 8;
-}
-
-.z_index_9 {
-  z-index: 9;
-}
-
 /*Footer------------------------------------------------------------------------------------------------------------>*/
 /*last-container */
 .last-container {
@@ -1471,213 +1394,20 @@ footer {
   float: right;
 }
 
+@media screen and (max-width: 600px) {
+  .recent-post {
+    display: none;
+  }
+
+  .table {
+    display: none;
+  }
+
+  .small-last {
+    display: block;
+  }
+}
 /*Footer end-------------------------------------------------------------------------------------------------------->*/
-/*Side Login-------------------------------------------------------------------------------------------------------->*/
-.loginpage {
-  /*display: none;*/
-  overflow: scroll;
-  position: fixed;
-  top: 0px;
-  width: 320px;
-  background-color: white;
-  right: 0;
-  padding-left: 15px;
-  padding-right: 10px;
-  z-index: 11;
-  bottom: 0px;
-}
-
-.loginpageusername,
-.loginpagepassword {
-  width: 95%;
-  border-radius: 30px;
-  border: 1px solid #dbdbdb;
-  margin: 15px 0px;
-  padding: 12px 0px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-
-.loginpageusername:active,
-.loginpagepassword:active,
-.loginpageusername:focus,
-.loginpagepassword:focus {
-  outline: none;
-}
-
-.remember_me,
-.lost_your_password {
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-.lost_your_password {
-  float: right;
-}
-
-.orloginwith {
-  margin-top: 60px;
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.checkbox {
-  float: left;
-  margin-top: 20px;
-}
-
-.remember_me {
-  float: left;
-}
-
-.loginpage p {
-  border-bottom: 1px solid #dbdbdb;
-}
-
-.loginpage div {
-  text-align: center;
-  padding: 12px 0px;
-}
-
-#login_page_pic {
-  display: inline-block;
-}
-
-/*.loginpage
-{
-  text-align: $text_align_center;
-}*/
-.loginpage h2 {
-  display: inline-block;
-}
-
-.loginpage h5 {
-  cursor: pointer;
-  float: right;
-}
-
-.log_button {
-  color: white;
-  opacity: 0.8;
-  width: 95%;
-  cursor: pointer;
-  background-color: #83AC2B;
-  margin-top: 10px;
-  padding: 12px 0px;
-  /*border-radius: 30px;*/
-  border: none;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-
-.log_button:hover {
-  opacity: 1;
-}
-
-.log_button:active {
-  outline: none;
-}
-
-.loginpage a {
-  color: #83AC2B;
-  opacity: 0.9;
-}
-
-/*.loginpage a:hover {
-    opacity: 1;
-    border-bottom: 1px solid #83AC2B;
-}*/
-.socio_login {
-  width: 95%;
-  opacity: 0.8;
-  color: white;
-  padding: 12px 0px;
-  margin-top: 10px;
-  cursor: pointer;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-
-.socio_login i {
-  float: left;
-  margin-left: 15px;
-}
-
-#fb_account {
-  background-color: #365493;
-  border: none;
-}
-
-#google_account {
-  background-color: #55acee;
-  border: none;
-}
-
-.no_account {
-  text-align: center;
-  padding: 10px 0px;
-}
-
-.no_account i {
-  padding-bottom: 10px;
-  color: #dbdbdb;
-}
-
-.no_account a {
-  color: black;
-  opacity: 0.8;
-  /*margin-top: 18px;*/
-  /*border-bottom: 1px solid #83AC2B;*/
-}
-
-.no_account a:hover {
-  opacity: 1;
-  color: #83AC2B;
-}
-
-#email-status,
-#password-status {
-  position: relative;
-  top: -10px;
-}
-
-/*Side Login ends---------------------------------------------------------------------------------------------------->*/
-/*Transparent background--------------------------------------------------------------------------------------------->*/
-#transbg {
-  /*display: none;*/
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  /*left: 0px;*/
-  right: 320px;
-  width: 100%;
-  background-color: black;
-  opacity: 0.65;
-  z-index: 11;
-}
-
-/*Transparent background ends------------------------------------------------------------------------------------------>*/
-/*grid items css*/
-.price-color {
-  color: #028a0f;
-}
-
-.item-description {
-  color: grey;
-  font-family: myFirstFont;
-}
-
-.red-asteriks {
-  color: red;
-}
-
 /* Down Navigation Bar */
 .down_nav {
   display: flex;
@@ -1724,6 +1454,568 @@ footer {
   left: 20px;
   font-family: myFirstFont;
   font-weight: bold;
+}
+
+/*bottom search bar*/
+#searchbar-bottom {
+  bottom: 60px;
+  right: 0px;
+  z-index: 10;
+  /*display: none;*/
+}
+
+#search-bar-close-bottom {
+  z-index: 10;
+  cursor: pointer;
+  align-items: center;
+  width: 25%;
+  border-radius: 25px;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+#searchbox-bottom {
+  width: 70%;
+  height: 30px;
+  border: 1.5px solid black;
+  border-radius: 25px;
+  background-color: white;
+  outline: none;
+}
+
+#searchbox-bottom:active {
+  outline: none;
+}
+
+/*classes for javascript*/
+.disp-block {
+  display: block;
+}
+
+.disp-none {
+  display: none;
+}
+
+.overflow_scroll {
+  overflow: scroll;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.z_index_-2 {
+  z-index: -2;
+}
+
+.z_index_6 {
+  z-index: 6;
+}
+
+.z_index_7 {
+  z-index: 7;
+}
+
+.z_index_8 {
+  z-index: 8;
+}
+
+.z_index_9 {
+  z-index: 9;
+}
+
+@media screen and (max-width: 1441px) and (min-width: 1410px) {
+  #broccoli {
+    top: 100px;
+    left: 1030px;
+    width: 180px;
+    height: auto;
+  }
+
+  #carrot {
+    width: 170px;
+    height: auto;
+    top: 420px;
+    left: 1050px;
+  }
+
+  #cucumber {
+    left: 800px;
+    width: 200px;
+    height: 160px;
+  }
+
+  #corn {
+    left: 220px;
+    width: 170px;
+    height: auto;
+  }
+
+  #tomato {
+    left: 300px;
+    width: 130px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #broccoli {
+    top: 100px;
+    left: 860px;
+    width: 180px;
+    height: auto;
+  }
+
+  #carrot {
+    width: 170px;
+    height: auto;
+    top: 420px;
+    left: 880px;
+  }
+
+  #cucumber {
+    left: 600px;
+    width: 200px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  #broccoli {
+    top: 100px;
+    left: 830px;
+    width: 180px;
+    height: auto;
+  }
+
+  #carrot {
+    width: 170px;
+    height: auto;
+    top: 420px;
+    left: 800px;
+  }
+
+  #cucumber {
+    left: 500px;
+    width: 200px;
+    height: 160px;
+  }
+
+  #corn {
+    left: 50px;
+    width: 170px;
+    height: auto;
+  }
+
+  #tomato {
+    width: 130px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1025px) and (min-width: 768px) {
+  #broccoli,
+#tomato,
+#carrot,
+#cucumber,
+#corn {
+    display: none;
+  }
+}
+/*tablet*/
+@media screen and (max-width: 1000px) and (min-width: 427px) {
+  .video-play {
+    top: 280px;
+  }
+
+  /*social media icons*/
+  .social-media-icons {
+    top: 150px;
+  }
+
+  #broccoli,
+#tomato,
+#corn,
+#cucumber,
+#carrot,
+#redchilli,
+#pages,
+#elements,
+#buy {
+    display: none;
+  }
+
+  #homeimgcol1 {
+    width: 300px;
+  }
+
+  #wrap {
+    width: 280px;
+  }
+
+  .veggie {
+    padding-left: 10px;
+    font-size: 40px;
+  }
+
+  .home-images {
+    margin-left: -60px;
+  }
+
+  /*featured products*/
+  /*.featured-products-head-div{
+    margin-top: 200px;
+  }*/
+  /*fruits*/
+  .single-column {
+    width: 50%;
+  }
+
+  .fruit-grid {
+    margin-left: 30px;
+  }
+
+  /*burger*/
+  .our-burgers-head-div {
+    margin-top: 720px;
+  }
+
+  .burger-grid {
+    margin-left: 30px;
+  }
+
+  /*milkshake*/
+  #grid3div1,
+#grid3div2 {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  #grid3div2 {
+    margin-top: -60px;
+  }
+
+  #grid3div3 {
+    position: relative;
+    top: 330px;
+    z-index: 2;
+  }
+
+  .icecream-grid,
+#grid4div1 {
+    /*height: 480px;*/
+    height: 550px;
+    margin-top: -100px;
+  }
+
+  #icecreamrow1 {
+    font-size: 35px;
+  }
+
+  .icecream-numbers-text {
+    font-size: 14px;
+  }
+
+  .container12 {
+    margin-top: 1400px;
+  }
+
+  /*how it works*/
+  #grid5div1,
+#grid5div2,
+#grid5div3 {
+    width: 100%;
+  }
+
+  /*1234*/
+  .con14div {
+    width: 50%;
+  }
+
+  /*leave a review*/
+  .container15 {
+    margin-top: 1900px;
+  }
+
+  .last-container {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 670px) and (min-width: 600px) {
+  .recent-post {
+    display: none;
+  }
+
+  .stories {
+    padding-left: 120px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  #homeimgcol1 {
+    width: 260px;
+  }
+
+  #homeimgcol2 {
+    width: 260px;
+  }
+
+  .video-play {
+    display: none;
+  }
+}
+/*@media screen and (max-width: 650px) and (min-width: 500px)*/
+@media screen and (max-width: 650px) and (min-width: 427px) {
+  .help-display, #searchlogo, #blog, #register, .video-play {
+    display: none;
+  }
+
+  #login {
+    position: absolute;
+    right: 10px;
+  }
+
+  #homeimgcol1 {
+    width: 250px;
+  }
+
+  #homeimgcol2 {
+    width: 250px;
+  }
+
+  #wrap {
+    width: 220px;
+  }
+
+  .veggie {
+    padding-left: 10px;
+    font-size: 35px;
+  }
+
+  .home-images {
+    margin-left: 0px;
+  }
+
+  .featured-products-head-div {
+    margin-top: 230px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .video-play {
+    display: none;
+  }
+
+  /*down navigation bar*/
+  .down_nav {
+    /*display: flex;*/
+    bottom: 0px;
+  }
+
+  #broccoli,
+#tomato,
+#corn,
+#cucumber,
+#carrot,
+#redchilli,
+#shop,
+#blog,
+#pages,
+#elements,
+#buy,
+#register,
+#searchlogo,
+#login, #home {
+    display: none;
+  }
+
+  #help {
+    position: absolute;
+    right: 10px;
+  }
+
+  /*.navborder {
+      display: none;
+  }*/
+  .home-images {
+    display: grid;
+    margin-left: 0px;
+  }
+
+  #homeimgcol1 {
+    width: 320px;
+    border: none;
+  }
+
+  #homeimgcol2 {
+    width: 320px;
+    border-style: none none solid solid;
+  }
+
+  #wrap {
+    width: 270px;
+  }
+
+  .veggie {
+    padding-left: 10px;
+    font-size: 40px;
+  }
+
+  #shopnow,
+#viewmore {
+    display: none;
+  }
+
+  #homebg {
+    width: 100%;
+    height: 520px;
+  }
+
+  #container5 {
+    display: none;
+  }
+
+  /*featured products*/
+  .featured-products-head-div {
+    margin-top: 100px;
+  }
+
+  /*fruits*/
+  .single-column {
+    width: 100%;
+  }
+
+  .fruit-grid {
+    margin-left: 30px;
+  }
+
+  /*burger*/
+  .our-burgers-head-div {
+    margin-top: 1300px;
+  }
+
+  .burger-grid {
+    margin-left: 30px;
+  }
+
+  /*milkshakes*/
+  #grid3div1,
+#grid3div2 {
+    margin-top: 0px;
+  }
+
+  #grid3div1,
+#grid3div2 {
+    width: 100%;
+  }
+
+  #grid3div1 {
+    margin-top: 50px;
+  }
+
+  #grid3div2 {
+    margin-top: -100px;
+  }
+
+  #milkshake {
+    width: 300px;
+    height: auto;
+  }
+
+  #grid3div3 {
+    position: relative;
+    top: 350px;
+    z-index: 2;
+  }
+
+  /*icecream*/
+  .icecream-container {
+    margin-top: 2000px;
+  }
+
+  .icecream-grid,
+#grid4div1 {
+    width: 100%;
+  }
+
+  .icecream-grid {
+    margin-top: -100px;
+    height: auto;
+  }
+
+  .fruit-ice-cream-heading,
+.fruit-ice-cream-para,
+.icecreamtable {
+    padding-right: 15px;
+  }
+
+  /*how it works*/
+  #grid5div1,
+#grid5div2,
+#grid5div3 {
+    width: 100%;
+  }
+
+  /*1234*/
+  .con14div {
+    width: 100%;
+  }
+
+  /*leave a review*/
+  .container15 {
+    margin-top: 2400px;
+  }
+
+  /*footer*/
+  .last-container {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 376px) {
+  /*down navigation bar*/
+  /*.down_nav{
+  	display: flex;
+  }*/
+  .home-images {
+    margin-left: 0px;
+  }
+
+  .fruit-grid {
+    margin-left: 25px;
+  }
+
+  .burger-grid {
+    margin-left: 25px;
+  }
+
+  #grid3div3 {
+    position: relative;
+    top: 380px;
+    z-index: 2;
+  }
+
+  .icecream-grid {
+    margin-top: -20px;
+  }
+
+  .fruit-ice-cream-heading {
+    font-size: 40px;
+  }
+
+  .container12 {
+    margin-top: 800px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .home-images {
+    margin-left: 0px;
+  }
+
+  #homeimgcol1 {
+    width: 300px;
+    border: none;
+  }
+
+  #homeimgcol2 {
+    width: 300px;
+    border-style: none none solid solid;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

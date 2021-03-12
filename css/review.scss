@@ -1,0 +1,23 @@
+  /*container 15 back to top********************************************/
+ .container15 {
+  margin-top: 800px;
+}
+
+#grid7div1 {
+  display:$grid_display;
+  justify-content: center;
+}
+
+#bttoplink {
+  text-decoration: none;
+  color: white;
+  background-color: #73be73;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+#bttoplink:hover {
+  background-color: #0e6b0e;
+}
+
+  /*********************************************************************/

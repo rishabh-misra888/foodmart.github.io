@@ -1,0 +1,512 @@
+@media screen and (max-width: 1441px) and (min-width: 1410px){
+    #broccoli {
+        top: 100px;
+        left: 1030px;
+        width: 180px;
+        height: auto;
+    }
+
+    #carrot {
+        width: 170px;
+        height: auto;
+        top: 420px;
+        left: 1050px;
+    }
+
+    #cucumber {
+        left: 800px;
+        width: 200px;
+        height: 160px;
+    }
+
+    #corn {
+        left: 220px;
+        width: 170px;
+        height: auto;
+    }
+
+    #tomato {
+        left: 300px;
+        width: 130px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #broccoli {
+        top: 100px;
+        left: 860px;
+        width: 180px;
+        height: auto;
+    }
+
+    #carrot {
+        width: 170px;
+        height: auto;
+        top: 420px;
+        left: 880px;
+    }
+
+    #cucumber {
+        left: 600px;
+        width: 200px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    #broccoli {
+        top: 100px;
+        left: 830px;
+        width: 180px;
+        height: auto;
+    }
+
+    #carrot {
+        width: 170px;
+        height: auto;
+        top: 420px;
+        left: 800px;
+    }
+
+    #cucumber {
+        left: 500px;
+        width: 200px;
+        height: 160px;
+    }
+
+    #corn {
+        left: 50px;
+        width: 170px;
+        height: auto;
+    }
+
+    #tomato {
+        width: 130px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 768px) {
+
+    #broccoli,
+    #tomato,
+    #carrot,
+    #cucumber,
+    #corn {
+        display: none;
+    }
+}
+
+
+/*tablet*/
+@media screen and (max-width: 1000px) and (min-width: 427px) {
+
+
+    .video-play{
+        top: 280px;
+    }
+
+
+    /*social media icons*/
+    .social-media-icons{
+        top: 150px;
+    }
+
+    #broccoli,
+    #tomato,
+    #corn,
+    #cucumber,
+    #carrot,
+    #redchilli,
+    #pages,
+    #elements,
+    #buy {
+        display: none;
+    }
+
+    #homeimgcol1 {
+        width: 300px;
+    }
+
+    #wrap {
+        width: 280px;
+    }
+
+    .veggie {
+        padding-left: 10px;
+        font-size: 40px;
+    }
+
+    .home-images {
+        margin-left: -60px;
+    }
+
+    /*featured products*/
+    /*.featured-products-head-div{
+    margin-top: 200px;
+  }*/
+    /*fruits*/
+    .single-column {
+        width: 50%;
+    }
+
+    .fruit-grid {
+        margin-left: 30px;
+    }
+
+    /*burger*/
+    .our-burgers-head-div {
+        margin-top: 720px;
+    }
+
+    .burger-grid {
+        margin-left: 30px;
+    }
+
+    /*milkshake*/
+    #grid3div1,
+    #grid3div2 {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    #grid3div2 {
+    	margin-top: -60px;
+    }
+
+    #grid3div3 {
+        position: relative;
+        top: 330px;
+        z-index: 2;
+    }
+
+    .icecream-grid,
+    #grid4div1 {
+        /*height: 480px;*/
+        height: 550px;
+        margin-top: -100px;
+    }
+
+    #icecreamrow1 {
+        font-size: 35px;
+    }
+
+    .icecream-numbers-text{
+        font-size: 14px;
+    }
+
+    .container12 {
+        margin-top: 1400px;
+    }
+
+    /*how it works*/
+
+    #grid5div1,
+    #grid5div2,
+    #grid5div3 {
+        width: 100%;
+    }
+
+    /*1234*/
+    .con14div {
+        width: 50%;
+    }
+
+    /*leave a review*/
+    .container15 {
+        margin-top: 1900px;
+    }
+
+    .last-container {
+        margin-top: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 670px) and (min-width: 600px){
+    .recent-post {
+        display: none;
+    }
+    .stories{
+        padding-left: 120px;
+    }
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+    #homeimgcol1 {
+        width: 260px;
+    }
+    #homeimgcol2 {
+        width: 260px;
+    }
+
+    .video-play{
+        display: none;
+    }
+}
+
+/*@media screen and (max-width: 650px) and (min-width: 500px)*/
+@media screen and (max-width: 650px) and (min-width: 427px){
+	.help-display, #searchlogo, #blog, #register,.video-play{
+		display: none;
+	}
+	#login{
+		position: absolute;
+		right: 10px;
+	}
+
+	#homeimgcol1 {
+        width: 250px;
+    }
+    #homeimgcol2 {
+        width: 250px;
+    }
+
+    #wrap {
+        width: 220px;
+    }
+
+    .veggie {
+        padding-left: 10px;
+        font-size: 35px;
+    }
+
+    .home-images{
+    	margin-left: 0px;
+    }
+
+    .featured-products-head-div {
+        margin-top: 230px;
+    }
+
+}
+@media screen and (max-width: 426px) {
+    
+    .video-play{
+        display: none;
+    }
+
+	/*down navigation bar*/
+	.down_nav{
+		/*display: flex;*/
+        bottom: 0px;
+	}
+
+    #broccoli,
+    #tomato,
+    #corn,
+    #cucumber,
+    #carrot,
+    #redchilli,
+    #shop,
+    #blog,
+    #pages,
+    #elements,
+    #buy,
+    #register,
+    #searchlogo,
+    #login, #home {
+        display: none;
+    }
+
+    #help {
+        position: absolute;
+        right: 10px;
+    }
+
+    /*.navborder {
+        display: none;
+    }*/
+
+    .home-images {
+        display: grid;
+        margin-left: 0px;
+    }
+
+    #homeimgcol1 {
+        width: 320px;
+        border: none;
+    }
+
+    #homeimgcol2 {
+        width: 320px;
+        border-style: none none solid solid;
+    }
+
+    #wrap {
+        width: 270px;
+    }
+
+    .veggie {
+        padding-left: 10px;
+        font-size: 40px;
+    }
+
+    #shopnow,
+    #viewmore {
+        display: none;
+    }
+
+    #homebg {
+        width: 100%;
+        height: 520px;
+    }
+
+    #container5 {
+        display: none;
+    }
+
+    /*featured products*/
+    .featured-products-head-div {
+        margin-top: 100px;
+    }
+
+    /*fruits*/
+    .single-column {
+        width: 100%;
+    }
+
+    .fruit-grid {
+        margin-left: 30px;
+    }
+
+    /*burger*/
+    .our-burgers-head-div {
+        margin-top: 1300px;
+    }
+
+    .burger-grid {
+        margin-left: 30px;
+    }
+
+    /*milkshakes*/
+    #grid3div1,
+    #grid3div2 {
+        margin-top: 0px;
+    }
+
+    #grid3div1,
+    #grid3div2 {
+        width: 100%;
+    }
+
+    #grid3div1 {
+        margin-top: 50px;
+    }
+
+    #grid3div2 {
+        margin-top: -100px;
+    }
+
+    #milkshake {
+        width: 300px;
+        height: auto;
+    }
+
+    #grid3div3 {
+        position: relative;
+        top: 350px;
+        z-index: 2;
+    }
+
+    /*icecream*/
+    .icecream-container {
+        margin-top: 2000px;
+    }
+
+    .icecream-grid,
+    #grid4div1 {
+        width: 100%;
+    }
+
+    .icecream-grid {
+        margin-top: -100px;
+        height: auto;
+    }
+
+    .fruit-ice-cream-heading,
+    .fruit-ice-cream-para,
+    .icecreamtable {
+        padding-right: 15px;
+    }
+
+    /*how it works*/
+    #grid5div1,
+    #grid5div2,
+    #grid5div3 {
+        width: 100%;
+    }
+
+    /*1234*/
+    .con14div {
+        width: 100%;
+    }
+
+    /*leave a review*/
+    .container15 {
+        margin-top: 2400px;
+    }
+
+    /*footer*/
+    .last-container {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+	/*down navigation bar*/
+	/*.down_nav{
+		display: flex;
+	}*/
+
+    .home-images {
+        margin-left: 0px;
+    }
+
+    .fruit-grid {
+        margin-left: 25px;
+    }
+
+    .burger-grid {
+        margin-left: 25px;
+    }
+
+    #grid3div3 {
+        position: relative;
+        top: 380px;
+        z-index: 2;
+    }
+
+    .icecream-grid {
+        margin-top: -20px;
+    }
+
+    .fruit-ice-cream-heading {
+        font-size: 40px;
+    }
+
+    .container12 {
+        margin-top: 800px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+
+	
+    .home-images {
+        margin-left: 0px;
+    }
+
+    #homeimgcol1 {
+        width: 300px;
+        border: none;
+    }
+
+    #homeimgcol2 {
+        width: 300px;
+        border-style: none none solid solid;
+    }
+}

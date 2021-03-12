@@ -1,0 +1,213 @@
+  /*Side Login-------------------------------------------------------------------------------------------------------->*/
+  .loginpage {
+      /*display: none;*/
+      overflow: scroll;
+      position: fixed;
+      top: 0px;
+      width: 320px;
+      background-color: white;
+      right: 0;
+      padding-left: 15px;
+      padding-right: 10px;
+      z-index: 11;
+      bottom: 0px;
+  }
+
+  .loginpageusername,
+  .loginpagepassword {
+      width: 95%;
+      border-radius: 30px;
+      border: 1px solid #dbdbdb;
+      margin: 15px 0px;
+      padding: 12px 0px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+  }
+
+  .loginpageusername:active,
+  .loginpagepassword:active,
+  .loginpageusername:focus,
+  .loginpagepassword:focus {
+      outline: none;
+  }
+
+  .remember_me,
+  .lost_your_password {
+      font-size: 12px;
+      margin-top: 20px;
+  }
+
+  .lost_your_password{
+    float: $float_right;
+  }
+
+  .orloginwith {
+      margin-top: 60px;
+      font-weight: bold;
+      font-size: 13px;
+  }
+
+  .checkbox {
+      float: $float_left;
+      margin-top: 20px;
+  }
+
+  .remember_me {
+      float: $float_left;
+  }
+
+  .loginpage p {
+      border-bottom: 1px solid #dbdbdb;
+  }
+
+  .loginpage div {
+      text-align: $text_align_center;
+      padding: 12px 0px;
+  }
+
+  #login_page_pic {
+      display: inline-block;
+  }
+
+  /*.loginpage
+  {
+    text-align: $text_align_center;
+  }*/
+  .loginpage h2 {
+      display: inline-block;
+  }
+
+  .loginpage h5 {
+      cursor: pointer;
+      float: $float_right;
+  }
+
+  .log_button {
+      color: white;
+      opacity: 0.8;
+      width: 95%;
+      cursor: pointer;
+      background-color: #83AC2B;
+      margin-top: 10px;
+      padding: 12px 0px;
+      /*border-radius: 30px;*/
+      border: none;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+  }
+
+  .log_button:hover {
+      opacity: 1;
+  }
+
+  .log_button:active {
+      outline: none;
+  }
+
+  .loginpage a {
+      color: #83AC2B;
+      opacity: 0.9;
+  }
+
+  /*.loginpage a:hover {
+      opacity: 1;
+      border-bottom: 1px solid #83AC2B;
+  }*/
+
+  .socio_login {
+      width: 95%;
+      opacity: 0.8;
+      color: white;
+      padding: 12px 0px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+  }
+
+  .socio_login i {
+      float: $float_left;
+      margin-left: 15px;
+  }
+
+  #fb_account {
+      background-color: #365493;
+      border: none;
+  }
+
+  #google_account {
+      background-color: #55acee;
+      border: none;
+  }
+
+  .no_account {
+      text-align: $text_align_center;
+      padding: 10px 0px;
+  }
+
+  .no_account i {
+      padding-bottom: 10px;
+      color: #dbdbdb;
+  }
+
+  .no_account a {
+      color: black;
+      opacity: 0.8;
+      /*margin-top: 18px;*/
+      /*border-bottom: 1px solid #83AC2B;*/
+  }
+
+  .no_account a:hover {
+      opacity: 1;
+      color: #83AC2B;
+  }
+
+  #email-status,
+  #password-status {
+      position: relative;
+      top: -10px;
+  }
+
+  /*Side Login ends---------------------------------------------------------------------------------------------------->*/
+
+  /*Transparent background--------------------------------------------------------------------------------------------->*/
+  #transbg {
+      /*display: none;*/
+      position: fixed;
+      top: 0px;
+      bottom: 0px;
+      /*left: 0px;*/
+      right: 320px;
+      width: 100%;
+      background-color: black;
+      opacity: 0.65;
+      z-index: 11;
+  }
+
+  /*Transparent background ends------------------------------------------------------------------------------------------>*/
+
+  
+  /*username display*/
+  #display-username {
+      margin-top: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #f25278;
+      border-radius: 15px 50px;
+      background-color: rgba(239, 114, 21, 0.1);
+      border: 2px solid #ef7215;
+  }
+
+  #sign-out {
+    font-size: 14px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }

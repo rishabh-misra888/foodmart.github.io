@@ -1,79 +1,111 @@
-var navbar_loginpage_element = document.getElementById("login-page"); 
-var loginpage_transparent_background = document.getElementById("transbg");
-var loginpage_body = document.body;
-var navbar_searchelement = document.getElementById("searchbar");
-var searchCount = 0;
-const search_pizza = "https://www.zomato.com/lucknow/restaurants/dominos-pizza";
+const navbarLoginPageElement = document.getElementById('login-page'); 
+const loginpageTransparentBackground = document.getElementById('transbg');
+const bodyElement = document.body;
+const navbarSearchElement = document.getElementById('searchbar');
+const searchInputPizza = 'https://www.zomato.com/lucknow/restaurants/dominos-pizza';
+const navbarSearchElementBottom = document.getElementById('searchbar-bottom');
+const goToLocation = window.location;
+const clearSerachBar = document.getElementById('searchbox');
+const clearBottomSerachBar = document.getElementById('searchbox-bottom');
+let searchCount = 0;
+let searchCountBottom = 0;
 
-export function openLoginPage() {
-    navbar_loginpage_element.classList.remove("disp-none");
-    navbar_loginpage_element.classList.add("disp-block");
-    loginpage_transparent_background.classList.remove("disp-none");
-    loginpage_transparent_background.classList.add("disp-block");
-    // loginpage_body.classList.remove("overflow_scroll");
-    loginpage_body.classList.add("overflow_hidden");
-}
+export const openLoginPage = () => {
+  navbarLoginPageElement.classList.remove('disp-none');
+  navbarLoginPageElement.classList.add('disp-block');
+  loginpageTransparentBackground.classList.remove('disp-none');
+  loginpageTransparentBackground.classList.add('disp-block');
+  bodyElement.classList.add('overflow_hidden');
+};
 
-export function closeLoginPage() {
-    navbar_loginpage_element.classList.remove("disp-block");
-    navbar_loginpage_element.classList.add("disp-none");
-    loginpage_transparent_background.classList.remove("disp-block");
-    loginpage_transparent_background.classList.add("disp-none");
-    loginpage_body.classList.remove("overflow_hidden");
-    // loginpage_body.classList.add("overflow_scroll");
-}
+export const closeLoginPage = () => {
+  navbarLoginPageElement.classList.remove('disp-block');
+  navbarLoginPageElement.classList.add('disp-none');
+  loginpageTransparentBackground.classList.remove('disp-block');
+  loginpageTransparentBackground.classList.add('disp-none');
+  bodyElement.classList.remove('overflow_hidden');
+};
 
-export function hideLoginPage() {
-    navbar_loginpage_element.classList.remove("disp-block");
-    navbar_loginpage_element.classList.add("disp-none");
-    loginpage_transparent_background.classList.remove("disp-block");
-    loginpage_transparent_background.classList.add("disp-none");
-    loginpage_body.classList.remove("overflow_hidden");
-    loginpage_body.classList.add("overflow_scroll");
-}
+export const hideLoginPage = () => {
+  navbarLoginPageElement.classList.remove('disp-block');
+  navbarLoginPageElement.classList.add('disp-none');
+  loginpageTransparentBackground.classList.remove('disp-block');
+  loginpageTransparentBackground.classList.add('disp-none');
+  bodyElement.classList.remove('overflow_hidden');
+  bodyElement.classList.add('overflow_scroll');
+};
 
-export function searchBarOpen() { //use jquery toggle
-    if (searchCount === 0) { // use === or boolean 
-        navbar_searchelement.classList.remove("disp-none");
-        navbar_searchelement.classList.add("display-flex");
-        searchCount = 1;
-        closeSearchBar();
-    } else if (searchCount === 1) {
-        navbar_searchelement.classList.remove("display-flex");
-        navbar_searchelement.classList.add("disp-none");
-        searchCount = 0;
-    }
-}
-
-export function readSearchInput() {
-    var get_search_input = document.getElementById("searchbox").value;
-    //const search_pizza = "https://www.zomato.com/lucknow/restaurants/dominos-pizza";
-
-    navbar_searchelement.classList.remove("display-flex");
-    navbar_searchelement.classList.add("disp-none");
+export const searchBarOpen = () => {
+  clearSerachBar.value = '';
+  if (searchCount === 0) {
+    navbarSearchElement.classList.remove('disp-none');
+    navbarSearchElement.classList.add('display-flex');
+    searchCount = 1;
+    closeSearchBar();
+  } else if (searchCount === 1) {
+    navbarSearchElement.classList.remove('display-flex');
+    navbarSearchElement.classList.add('disp-none');
     searchCount = 0;
-    get_search_input = get_search_input.toLowerCase();
+  }
+};
 
-    if (get_search_input == "pizza") {
-        location.href = search_pizza;
-    } else if (get_search_input == "burger") {
-        location.href = "#burger";
-    } else if (get_search_input == "milkshake") {
-        location.href = "#milkshake";
-    } else if (get_search_input == "icecream") {
-        location.href = "#icecream1";
+export const BottomsearchBarOpen = () => {
+  clearBottomSerachBar.value = '';
+  if(searchCountBottom === 0) { 
+    navbarSearchElementBottom.classList.remove('disp-none');
+    navbarSearchElementBottom.classList.add('display-flex');
+    searchCountBottom = 1;
+    closeBottomSearchBar();
+  }
+  else if(searchCountBottom === 1) {
+    navbarSearchElementBottom.classList.remove('display-flex');
+    navbarSearchElementBottom.classList.add('disp-none');
+    searchCountBottom = 0;
+  }
+};
+
+export const readSearchInput = () => {
+  let getSearchInput = document.getElementById('searchbox').value;
+  const getBottomSearchInput = document.getElementById('searchbox-bottom').value;
+
+  navbarSearchElement.classList.remove('display-flex');
+  navbarSearchElement.classList.add('disp-none');
+
+  navbarSearchElementBottom.classList.remove('display-flex');
+  navbarSearchElementBottom.classList.add('disp-none');
+  searchCount = 0;
+  searchCountBottom = 0;
+  getSearchInput = getSearchInput.toLowerCase();
+
+  if (getSearchInput === 'pizza' || getBottomSearchInput === 'pizza') {
+    goToLocation.href = searchInputPizza;
+  } else if (getSearchInput === 'burger' || getBottomSearchInput === 'burger') {
+    goToLocation.href = '#burger';
+  } else if (getSearchInput === 'milkshake' || getBottomSearchInput === 'milkshake') {
+    goToLocation.href = '#milkshake';
+  } else if (getSearchInput === 'icecream' || getBottomSearchInput === 'icecream') {
+    goToLocation.href = '#icecream1';
+  }
+};
+
+export const closeSearchBar = () => {
+  window.onclick = (event) => {
+    const targetEvent = event.target;
+    if (targetEvent.id !== 'searchbox' && targetEvent.id !== 'search-bar-close' && targetEvent.id !== 'searchlogo') {
+      navbarSearchElement.classList.remove('display-flex');
+      navbarSearchElement.classList.add('disp-none');
+      searchCount = 0;
     }
-}
+  };
+};
 
-function closeSearchBar(){
-        window.onclick = function(event) {
-        var x = event.target;
-
-        if(x.id != "searchbox" && x.id != "search-bar-close" && x.id != "searchlogo"){
-            
-            navbar_searchelement.classList.remove("display-flex");
-            navbar_searchelement.classList.add("disp-none");
-            searchCount = 0;
-        }
-    };
-}
+export const closeBottomSearchBar = () => {
+  window.onclick = (event) => {
+    const targetEvent = event.target;
+    if (targetEvent.id !== 'searchbox-bottom' && targetEvent.id !== 'search-bar-close-bottom' && targetEvent.id !== 'searchbutton-bottom') {
+      navbarSearchElementBottom.classList.remove('display-flex');
+      navbarSearchElementBottom.classList.add('disp-none');
+      searchCountBottom = 0;
+    }
+  };
+};

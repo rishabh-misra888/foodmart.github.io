@@ -1,0 +1,61 @@
+/*Ice Cream*************************************/
+  .icecream-container {
+      position: relative;
+      top: 100px;
+      height: 450px;
+      color: white;
+  }
+
+  #icecream1 {
+      width: 199px;
+      height: 422px;
+      margin-top: 19px;
+  }
+
+  #grid4div1,
+  .icecream-grid {
+      float: $float_left;
+      width: 50%;
+      height: 450px;
+      background-color: #fc4c4e;
+      /*background-color: #fc9483;*/
+  }
+
+  #grid4div1 {
+      text-align: $text_align_center;
+  }
+
+  .icecream-grid {
+      text-align: right;
+  }
+  
+
+  .fruit-ice-cream-heading,
+  .fruit-ice-cream-para {
+      position: relative;
+      top: 50px;
+  }
+
+  .fruit-ice-cream-heading {
+      font-size: 50px;
+      font-family: $product-heading-font;
+  }
+
+  .icecream-table {
+      margin-top: 70px;
+  }
+
+  #icecreamrow1 {
+      font-size: 40px;
+  }
+
+  #num20,
+  #num460,
+  #num135,
+  .icecream-numbers-text {
+      font-weight: bold;
+      width:220px; 
+  }
+  
+
+  /***********************************************/

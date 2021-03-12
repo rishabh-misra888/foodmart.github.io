@@ -1,0 +1,33 @@
+  /*featured products********************************************/
+  .featured-products-head-div {
+    display:$grid_display;
+    /*margin-top: 200px;*/
+    margin-top: 300px;
+    text-align: $text_align_center;
+}
+
+.single-column{
+  float: $float_left;
+  height: 300px;
+  width: 25%;
+  /*background-color: red;*/
+  display: inline-block;
+  text-align: $text_align_center;
+}
+
+.featured-products-heading {
+    font-size: 50px;
+    font-family: $product-heading-font;
+}
+
+.sub-banana-logo {
+    margin-top: -20px;
+    width: 288px;
+    height: 70px;
+}
+
+.featured-products-quote1 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+  /***************************************************************/
