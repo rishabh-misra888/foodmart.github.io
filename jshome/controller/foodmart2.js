@@ -106,7 +106,7 @@ $(document).ready(() => {
 const userLoggedIn = () => {
   if (localStorage.getItem('dataPushedIn') == 1) {
     loginForm.classList.add('disp-none');
-    displayUserName.innerHTML = `welcome : ${localStorage.getItem('username')}`;
+    displayUserName.innerHTML = `Welcome ${localStorage.getItem('username')}!`;
     displayUserName.classList.remove('disp-none');
     displayUserName.classList.add('disp-flex');
     signOut.classList.remove('disp-none');

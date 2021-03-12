@@ -97,6 +97,6 @@ export function validateLoginPassword() {
 
 
 export function validateLoginPage() {
-    // alert("Successfully Logged In" + apiData[temp].name);
+    alert("Successfully Logged In");
     return apiData[temp].name;
 }
