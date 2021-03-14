@@ -567,22 +567,22 @@ body {
   z-index: 9;
 }
 
-#fbdiv1:hover ~ #fbdiv2 {
+.fb-icon-top:hover ~ .fb-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
 
-#twitterdiv1:hover ~ #twitterdiv2 {
+.twitter-icon-top:hover ~ .twitter-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
 
-#instadiv1:hover ~ #instadiv2 {
+.insta-icon-top:hover ~ .insta-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
 
-#youtubediv1:hover ~ #youtubediv2 {
+.utube-icon-top:hover ~ .utube-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
@@ -726,12 +726,12 @@ body {
   margin-left: 15px;
 }
 
-#fb_account {
+.fb-login {
   background-color: #365493;
   border: none;
 }
 
-#google_account {
+.google-login {
   background-color: #55acee;
   border: none;
 }
@@ -758,15 +758,14 @@ body {
   color: #83AC2B;
 }
 
-#email-status,
-#password-status {
+.login-error {
   position: relative;
   top: -10px;
 }
 
 /*Side Login ends---------------------------------------------------------------------------------------------------->*/
 /*Transparent background--------------------------------------------------------------------------------------------->*/
-#transbg {
+.transbg-login {
   /*display: none;*/
   position: fixed;
   top: 0px;
@@ -781,7 +780,7 @@ body {
 
 /*Transparent background ends------------------------------------------------------------------------------------------>*/
 /*username display*/
-#display-username {
+.display-uname-loggedin {
   margin-top: 50px;
   font-size: 18px;
   font-weight: bold;
@@ -791,7 +790,7 @@ body {
   border: 2px solid #ef7215;
 }
 
-#sign-out {
+.signout-loggedin {
   font-size: 14px;
   color: blue;
   text-decoration: underline;
@@ -967,44 +966,41 @@ body {
   margin-top: 460px;
 }
 
-#milkshake {
+.milkshake {
   width: 366px;
   height: 497px;
 }
 
-#grid3div1,
-#grid3div2 {
+.grid3div1,
+.grid3div2 {
   float: left;
   width: 48%;
   height: 500px;
   /*background-color: $products-grid-bgcolor;*/
 }
 
-#grid3div1 {
+.grid3div1 {
   text-align: center;
 }
 
-#g3d2text1,
-#g3d2text2,
-#g3d2text3,
-#g3d2text4 {
+.milkshake-details {
   position: relative;
   top: 50px;
 }
 
-#g3d2text1 {
+.g3d2text1 {
   font-size: 50px;
   font-family: tahoma;
 }
 
-#g3d2text3 {
+.g3d2text3 {
   background-color: #73be73;
   padding: 10px;
   border-radius: 25px;
   color: white;
 }
 
-#g3d2text4 {
+.g3d2text4 {
   background-color: grey;
   padding: 10px;
   border-radius: 25px;
@@ -1012,7 +1008,7 @@ body {
   margin-left: 10px;
 }
 
-#grid3div3 {
+.grid3div3 {
   position: relative;
   top: 300px;
   z-index: 2;
@@ -1246,12 +1242,12 @@ body {
   margin-top: 800px;
 }
 
-#grid7div1 {
+.leave-review {
   display: grid;
   justify-content: center;
 }
 
-#bttoplink {
+.review-link {
   text-decoration: none;
   color: white;
   background-color: #73be73;
@@ -1259,7 +1255,7 @@ body {
   padding: 10px 20px;
 }
 
-#bttoplink:hover {
+.review-link:hover {
   background-color: #0e6b0e;
 }
 
@@ -1683,17 +1679,17 @@ footer {
   }
 
   /*milkshake*/
-  #grid3div1,
-#grid3div2 {
+  .grid3div1,
+.grid3div2 {
     width: 100%;
     margin-top: 100px;
   }
 
-  #grid3div2 {
+  .grid3div2 {
     margin-top: -60px;
   }
 
-  #grid3div3 {
+  .grid3div3 {
     position: relative;
     top: 330px;
     z-index: 2;
@@ -1895,30 +1891,30 @@ footer {
   }
 
   /*milkshakes*/
-  #grid3div1,
-#grid3div2 {
+  .grid3div1,
+.grid3div2 {
     margin-top: 0px;
   }
 
-  #grid3div1,
-#grid3div2 {
+  .grid3div1,
+.grid3div2 {
     width: 100%;
   }
 
-  #grid3div1 {
+  .grid3div1 {
     margin-top: 50px;
   }
 
-  #grid3div2 {
+  .grid3div2 {
     margin-top: -100px;
   }
 
-  #milkshake {
+  .milkshake {
     width: 300px;
     height: auto;
   }
 
-  #grid3div3 {
+  .grid3div3 {
     position: relative;
     top: 350px;
     z-index: 2;
@@ -1984,7 +1980,7 @@ footer {
     margin-left: 25px;
   }
 
-  #grid3div3 {
+  .grid3div3 {
     position: relative;
     top: 380px;
     z-index: 2;

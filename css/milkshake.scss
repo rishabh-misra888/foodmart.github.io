@@ -3,44 +3,41 @@
       margin-top: 460px;
   }
 
-  #milkshake {
+  .milkshake {
       width: 366px;
       height: 497px;
   }
 
-  #grid3div1,
-  #grid3div2 {
+  .grid3div1,
+  .grid3div2 {
       float: $float_left;
       width: 48%;
       height: 500px;
       /*background-color: $products-grid-bgcolor;*/
   }
 
-  #grid3div1 {
+  .grid3div1 {
       text-align: $text_align_center;
   }
 
-  #g3d2text1,
-  #g3d2text2,
-  #g3d2text3,
-  #g3d2text4 {
+  .milkshake-details {
       position: relative;
       top: 50px;
   }
 
-  #g3d2text1 {
+  .g3d2text1 {
       font-size: 50px;
       font-family: $product-heading-font;
   }
 
-  #g3d2text3 {
+  .g3d2text3 {
       background-color: #73be73;
       padding: 10px;
       border-radius: 25px;
       color: white;
   }
 
-  #g3d2text4 {
+  .g3d2text4 {
       background-color: grey;
       padding: 10px;
       border-radius: 25px;
@@ -48,7 +45,7 @@
       margin-left: 10px;
   }
 
-  #grid3div3 {
+  .grid3div3 {
       position: relative;
       top: 300px;
       z-index: 2;

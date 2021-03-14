@@ -66,7 +66,7 @@ export const BottomsearchBarOpen = () => {
 
 export const readSearchInput = () => {
   let getSearchInput = document.getElementById('searchbox').value;
-  const getBottomSearchInput = document.getElementById('searchbox-bottom').value;
+  let getBottomSearchInput = document.getElementById('searchbox-bottom').value;
 
   navbarSearchElement.classList.remove('display-flex');
   navbarSearchElement.classList.add('disp-none');
@@ -76,6 +76,7 @@ export const readSearchInput = () => {
   searchCount = 0;
   searchCountBottom = 0;
   getSearchInput = getSearchInput.toLowerCase();
+  getBottomSearchInput = getBottomSearchInput.toLowerCase();
 
   if (getSearchInput === 'pizza' || getBottomSearchInput === 'pizza') {
     goToLocation.href = searchInputPizza;

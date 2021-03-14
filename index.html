@@ -10,11 +10,10 @@
     <meta name = "author" content = "Rishabh , inderbir , Devinder , rajat , rajkumar">
     <title>Home Page | FOODMART</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/foodmartMediaQ.css"> -->
     <script src = "https://kit.fontawesome.com/bbe26e2434.js" crossorigin = "anonymous"></script>
 </head>
 
-<body>  <!--BEM for class names--> <!--hyphenated-->
+<body>
     <!--bg color change for js-->
     <header>
         <div class = "display-flex fixed-position bgbox-class" id = "bgbox"></div> 
@@ -172,49 +171,49 @@
     
     <!--social media icons-->
     <div class = "social-media-icons">
-        <div id = "fbdiv1" class = "icon-top">
+        <div class = "fb-icon-top">
             <a href = "https://www.facebook.com/" tabindex = "-1">
                 <img class = "social-icons-top" src = "IMAGES/fb.png" alt = "fb Logo">
             </a>
         </div>
 
-        <div id = "fbdiv2" class = "icon-bottom">
+        <div class = "fb-icon-bottom">
             <a href = "https://www.facebook.com/" tabindex = "1201">
                 <img class = "social-icons-bottom" src = "IMAGES/fb1.png" alt = "Facebook-logo">
             </a>
         </div>
 
-        <div id = "twitterdiv1" class = "icon-top">
+        <div class = "twitter-icon-top">
             <a href = "https://twitter.com/?lang=en" tabindex = "-1">
                 <img class = "social-icons-top" src = "IMAGES/twitter.PNG" alt = "twitter-Logo">
             </a>
         </div>
 
-        <div id = "twitterdiv2" class = "icon-bottom">
+        <div class = "twitter-icon-bottom">
             <a href = "https://twitter.com/?lang=en" tabindex = "1202">
                 <img class = "social-icons-bottom" src = "IMAGES/twitter1.png" alt = "Twitter_Logo">
             </a>
         </div>
 
-        <div id = "instadiv1" class = "icon-top">
+        <div class = "insta-icon-top">
             <a href = "https://www.instagram.com/?hl=en" tabindex = "-1">
                 <img class = "social-icons-top" src = "IMAGES/insta.PNG" alt = "insta-Logo">
             </a>
         </div>
 
-        <div id = "instadiv2" class = "icon-bottom">
+        <div class = "insta-icon-bottom">
             <a href = "https://www.instagram.com/?hl=en" tabindex = "1203">
                 <img class = "social-icons-bottom" src = "IMAGES/insta1.png" alt = "instagram Logo">.
             </a>
         </div>
 
-        <div id = "youtubediv1" class = "icon-top">
+        <div class = "utube-icon-top">
             <a href = "https://www.youtube.com/" tabindex = "-1">
                 <img class = "social-icons-top" src = "IMAGES/youtubeold.PNG" alt = "Yt-Logo">
             </a>
         </div>
 
-        <div id = "youtubediv2" class = "icon-bottom">
+        <div class = "utube-icon-bottom">
             <a href = "https://www.youtube.com/" tabindex = "1204">
                 <img class = "social-icons-bottom" src = "IMAGES/youtube1.png" alt = "Youtube Logo">
             </a>
@@ -228,6 +227,7 @@
             <source src="./VIDEOS/burger_video.mp4" type="video/mp4">
             <source src="./VIDEOS/burger_video.ogg" type="video/ogg">
         </video>
+        <p class = "advertise-text">MUST TRY</p>
     </div>
 
     <!--featured products-->
@@ -322,14 +322,14 @@
     <!--__________________________________________________________________________________________________________-->
     <!--grid 3 milkshake-->
     <div class = "container10">
-        <div id = "grid3div1"><img id = "milkshake" src = "IMAGES/milkshake.png" alt = "Milkshake"></div>
-        <div id = "grid3div2">
-            <div id = "grid3div3">
-                <a class = "g3d2link" id = "g3d2text3" href = "#">View More</a>
-                <a class = "g3d2link" id = "g3d2text4" href = "#">Go To Shop</a>
+        <div class = "grid3div1"><img class = "milkshake" src = "IMAGES/milkshake.png" alt = "Milkshake"></div>
+        <div class = "grid3div2">
+            <div class = "grid3div3">
+                <a class = "g3d2link milkshake-details g3d2text3" href = "#">View More</a>
+                <a class = "g3d2link milkshake-details g3d2text4" href = "#">Go To Shop</a>
             </div>
-            <span id = "g3d2text1">Premium Milkshakes</span><br><br>
-            <div id = "g3d2text2">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover.<br><br>
+            <span class = "milkshake-details g3d2text1">Premium Milkshakes</span><br><br>
+            <div class = "milkshake-details g3d2text2">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover.<br><br>
                 <strong>Most Loved</strong>
                 <ol>
                     <li>Pineapple Punch</li>
@@ -469,7 +469,7 @@
     <!--__________________________________________________________________________________________________________-->
     <!--grid 7 back to top button-->
     <div class = "container15">
-        <div id = "grid7div1"><a id = "bttoplink" href = "#">Leave A Review</a>
+        <div class = "leave-review"><a class = "review-link" href = "#">Leave A Review</a>
         </div>
     </div>
     <!--__________________________________________________________________________________________________________-->
@@ -569,26 +569,26 @@
     <!--Side Login-->
     <div id = "login-page" class = "loginpage disp-none">
         <!-- display name after login start -->
-        <div id="display-username" class="disp-none"></div>
-        <div id="sign-out" class="disp-none">Signout</div>
+        <div id="display-username" class="disp-none display-uname-loggedin"></div>
+        <div id="sign-out" class="disp-none signout-loggedin">Signout</div>
         <!-- display name after login start -->
-        <form action = "foodmart2.html" method = "POST" id="login-form">
+        <form action = "index.html" method = "POST" id="login-form">
             <h2>SIGN IN</h2>
             <h5 id = "close_login" tabindex = "709">CLOSE &nbsp;<i class = "fa fa-times" aria-hidden = "true"></i></h5>
             <p></p>
             <label for = "login-page-username">Username or Email <span class = "red-asteriks">*</span></label><br>
             <input type = "text" name = "name" class = "loginpageusername" id = "login-page-username" tabindex = "701"><br>
-            <span id = "email-status"></span><br>
+            <span id = "email-status" class="login-error"></span><br>
             <label for = "login-page-password">Password <span class = "red-asteriks">*</span></label><br>
             <input type = "password" name = "pass" class = "loginpagepassword" id = "login-page-password" tabindex = "702"><br>
-            <span id = "password-status"></span><br>
+            <span id = "password-status" class="login-error"></span><br>
             <button type = "submit" id = "log" class = "log_button" disabled tabindex = "703">LOGIN</button><br>
             <input type = "checkbox" class = "checkbox" tabindex = "704">
             <span class = "remember_me">Remember me</span>
             <a href = "#" class = "lost_your_password" tabindex = "705">Lost your password?</a>
             <div class = "orloginwith">OR LOGIN WITH</div>
-            <button type = "button" class = "socio_login" id = "fb_account" tabindex = "706"><i class = "fa fa-facebook-square" aria-hidden = "true"></i>FACEBOOK</button><br>
-            <button type = "button" class = "socio_login" id = "google_account" tabindex = "707"><i class = "fa fa-google" aria-hidden = "true"></i>GOOGLE</button>
+            <button type = "button" class = "socio_login fb-login" tabindex = "706"><i class = "fa fa-facebook-square" aria-hidden = "true"></i>FACEBOOK</button><br>
+            <button type = "button" class = "socio_login google-login" tabindex = "707"><i class = "fa fa-google" aria-hidden = "true"></i>GOOGLE</button>
             <p></p>
             <div class = "no_account">
                 <i class = "fa fa-user-o fa-3x" aria-hidden = "true"></i><br>
@@ -600,7 +600,7 @@
     </div>
     <!--__________________________________________________________________________________________________________-->
     <!--transparent background when login page appears-->
-    <div id = "transbg" class = "disp-none"></div>
+    <div id = "transbg" class = "disp-none transbg-login"></div>
     <!--__________________________________________________________________________________________________________-->
     <!--Down_navbar-->
     <div class = "down_nav">

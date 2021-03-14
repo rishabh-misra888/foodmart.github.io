@@ -22,22 +22,20 @@
   height: 40px;
   z-index: 9;
 }
-#fbdiv1:hover ~ #fbdiv2 {
+.fb-icon-top:hover ~ .fb-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
 
-#twitterdiv1:hover ~ #twitterdiv2 {
+.twitter-icon-top:hover ~ .twitter-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
-
-#instadiv1:hover ~ #instadiv2 {
+.insta-icon-top:hover ~ .insta-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
-
-#youtubediv1:hover ~ #youtubediv2 {
+.utube-icon-top:hover ~ .utube-icon-bottom {
   transform: translateX(-110px);
   transition: 0.3s;
 }
