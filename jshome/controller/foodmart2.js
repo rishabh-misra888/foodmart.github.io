@@ -18,7 +18,7 @@ import {
 } from '../service/location.js';
 
 const loginForm = document.getElementById('login-form');
-const displayUserName =  document.getElementById('display-username');
+const displayUserName = document.getElementById('display-username');
 const signOut = document.getElementById('sign-out');
 
 $(document).ready(() => {

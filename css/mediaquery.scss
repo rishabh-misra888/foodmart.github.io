@@ -1,3 +1,8 @@
+@media screen and (min-width: 1441px){
+    #broccoli, #carrot, #cucumber, #corn, #tomato, #redchilli{
+        display: none;
+    }
+}
 @media screen and (max-width: 1441px) and (min-width: 1410px){
     #broccoli {
         top: 100px;
